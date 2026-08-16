@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#0b0b0f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hitster Tuti">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icono-192.png">
+<link rel="apple-touch-icon" href="icono-192.png">
+<title>Hitster Tuti</title>
+<style>
+  :root{--bg:#0b0b0f;--fg:#f4f4f6;--dim:#8a8a99;--line:#21212b;--accent:#e8b53a;--bad:#e05b5b;--ok:#4ec97e}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;min-height:100%;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;overscroll-behavior:none}
+  body{display:flex;flex-direction:column;align-items:center;justify-content:center;
+    min-height:100dvh;padding:24px;padding-top:calc(24px + env(safe-area-inset-top));
+    padding-bottom:calc(24px + env(safe-area-inset-bottom));gap:22px;text-align:center}
+  .hide{display:none!important}
+
+  /* ── disco ── */
+  .disc{position:relative;width:min(58vw,230px);aspect-ratio:1;border-radius:50%;flex:none;
+    background:radial-gradient(circle at 50% 50%,#1a1a22 0 17%,#0f0f14 17% 18%,#16161d 18% 100%);
+    box-shadow:0 18px 50px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.05);
+    display:grid;place-items:center;cursor:pointer;transition:transform .25s}
+  .disc::before{content:"";position:absolute;inset:6%;border-radius:50%;
+    background:repeating-radial-gradient(circle at 50% 50%,rgba(255,255,255,.045) 0 1px,transparent 1px 5px)}
+  .disc::after{content:"";position:absolute;width:27%;aspect-ratio:1;border-radius:50%;
+    background:var(--accent);box-shadow:0 0 0 7px rgba(232,181,58,.13)}
+  .disc.spin{animation:spin 4s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .disc:active{transform:scale(.97)}
+  .disc svg{position:relative;z-index:2;width:13%;fill:#0b0b0f;opacity:0;transition:opacity .2s}
+  .disc:not(.spin) svg{opacity:1}
+
+  .bar{width:min(100%,300px);height:6px;border-radius:99px;background:#20202a;overflow:hidden;flex:none}
+  .bar>i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .3s linear}
+  .time{font-variant-numeric:tabular-nums;font-size:13px;color:var(--dim);letter-spacing:.04em}
+  .status{min-height:20px;font-size:14px;color:var(--dim);max-width:330px;line-height:1.45}
+  .status.err{color:var(--bad)}
+  .badge{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);
+    border:1px solid var(--line);border-radius:99px;padding:4px 11px}
+
+  button{appearance:none;font:inherit;cursor:pointer;border-radius:99px}
+  .ghost{border:1px solid var(--line);background:transparent;color:var(--dim);padding:10px 17px;font-size:13px}
+  .ghost:active{background:#16161d}
+  .solid{border:none;background:var(--accent);color:#0b0b0f;padding:15px 30px;font-size:16px;font-weight:600}
+  .solid:active{transform:scale(.98)}
+  .row{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+
+  .ans{border:1px solid var(--line);border-radius:14px;padding:16px 20px;max-width:320px;width:100%}
+  .ans .ar{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.13em}
+  .ans .yr{font-size:40px;font-weight:700;letter-spacing:-.02em;margin:4px 0;font-variant-numeric:tabular-nums}
+  .ans .ti{font-size:15px}
+
+  /* ── inicio ── */
+  .logo{width:74px;height:74px;border-radius:50%;
+    background:radial-gradient(circle at 50% 50%,#1a1a22 0 20%,#0f0f14 20% 22%,#16161d 22% 100%);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);display:grid;place-items:center}
+  .logo::after{content:"";width:20%;aspect-ratio:1;border-radius:50%;background:var(--accent)}
+  h1{font-size:23px;margin:0;letter-spacing:-.01em}
+  .meta{font-size:13px;color:var(--dim);margin:0}
+
+  /* ── cámara ── */
+  #camara{position:fixed;inset:0;background:#000;z-index:50;display:none}
+  #camara.on{display:block}
+  #video{width:100%;height:100%;object-fit:cover}
+  .mira{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+  .mira i{width:min(66vw,290px);aspect-ratio:1;border-radius:26px;
+    box-shadow:0 0 0 100vmax rgba(0,0,0,.55);position:relative}
+  .mira i::before,.mira i::after{content:"";position:absolute;width:34px;height:34px;
+    border:3px solid var(--accent);border-radius:10px}
+  .mira i::before{top:-2px;left:-2px;border-right:0;border-bottom:0}
+  .mira i::after{bottom:-2px;right:-2px;border-left:0;border-top:0}
+  .camTxt{position:absolute;left:0;right:0;bottom:calc(96px + env(safe-area-inset-bottom));
+    text-align:center;color:#fff;font-size:14px;text-shadow:0 1px 6px rgba(0,0,0,.8);padding:0 30px}
+  .camBtn{position:absolute;left:50%;transform:translateX(-50%);
+    bottom:calc(30px + env(safe-area-inset-bottom));
+    border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.5);color:#fff;
+    padding:12px 24px;font-size:14px;backdrop-filter:blur(6px)}
+
+  /* ── ajustes ── */
+  .panel{max-width:430px;width:100%;text-align:left}
+  .panel h2.t{font-size:20px;margin:0 0 20px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+  .card h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:0 0 12px;font-weight:600}
+  .line{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px;margin-bottom:10px}
+  .line:last-child{margin-bottom:0}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:8px;background:var(--dim)}
+  .dot.on{background:var(--ok)} .dot.off{background:var(--bad)}
+  select{background:#14141b;border:1px solid var(--line);color:var(--fg);
+    border-radius:9px;padding:9px 11px;font:inherit;font-size:14px;width:100%}
+  .hint{font-size:12px;color:var(--dim);line-height:1.55;margin-top:10px}
+  code{background:#14141b;border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:12px;word-break:break-all}
+</style>
+</head>
+<body>
+
+<!-- ═════════ INICIO ═════════ -->
+<div id="inicio" class="hide" style="display:contents">
+  <div class="logo"></div>
+  <h1>Hitster Tuti</h1>
+  <p class="meta" id="meta">…</p>
+  <button class="solid" id="bEscanear">Escanear carta</button>
+  <div class="row">
+    <button class="ghost" id="bAjustes2">Ajustes</button>
+  </div>
+  <p class="hint" id="avisoCam" style="max-width:320px"></p>
+</div>
+
+<!-- ═════════ JUEGO ═════════ -->
+<div id="juego" class="hide" style="display:contents">
+  <div class="badge" id="modo">…</div>
+  <div class="disc" id="disc" role="button" aria-label="Reproducir">
+    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </div>
+  <div class="bar"><i id="fill"></i></div>
+  <div class="time" id="time">0:00</div>
+  <div class="status" id="status">Toca el disco</div>
+  <div class="row">
+    <button class="ghost" id="bReinicio">Volver a empezar</button>
+    <button class="ghost" id="bResp">Ver respuesta</button>
+  </div>
+  <div class="ans hide" id="resp"></div>
+  <button class="solid" id="bOtra">Escanear la siguiente</button>
+</div>
+
+<!-- ═════════ AJUSTES ═════════ -->
+<div id="panel" class="panel hide">
+  <h2 class="t">Ajustes</h2>
+
+  <div class="card">
+    <h2>Spotify — canción completa</h2>
+    <div class="line"><span><i class="dot" id="dSp"></i><span id="txtSp">Sin conectar</span></span>
+      <button class="ghost" id="bSp">Conectar</button></div>
+    <div id="zonaDisp" class="hide">
+      <div style="margin:12px 0 7px;color:var(--dim);font-size:12px">Dónde suena la música</div>
+      <select id="disp"></select>
+      <div class="hint">Abre Spotify en el parlante, notebook o TV donde quieras que suene
+        y toca «Actualizar». Si suena en un teléfono con la pantalla encendida, ahí se ve
+        el título: usa un parlante o deja esa pantalla dada vuelta.</div>
+      <div class="row" style="justify-content:flex-start;margin-top:11px">
+        <button class="ghost" id="bDisp">Actualizar dispositivos</button>
+        <button class="ghost" id="bSalir">Cerrar sesión</button>
+      </div>
+    </div>
+    <div class="hint" id="hintSp"></div>
+  </div>
+
+  <div class="card">
+    <h2>Respaldo — fragmento de 30 s</h2>
+    <div class="hint" style="margin-top:0">Siempre disponible, sin cuenta ni configuración.
+      Se usa solo si Spotify no está conectado o si no hay ningún dispositivo activo.</div>
+  </div>
+
+  <div class="card">
+    <h2>Escáner</h2>
+    <div class="hint" style="margin-top:0" id="hintCam"></div>
+  </div>
+
+  <button class="ghost" id="bVolverInicio">← Volver</button>
+</div>
+
+<!-- ═════════ CÁMARA ═════════ -->
+<div id="camara">
+  <video id="video" playsinline muted></video>
+  <div class="mira"><i></i></div>
+  <div class="camTxt" id="camTxt">Apunta al código de una carta</div>
+  <button class="camBtn" id="bCerrarCam">Cancelar</button>
+</div>
+
+<script src="auth.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const fmt = s => Math.floor(s/60) + ':' + String(Math.floor(s%60)).padStart(2,'0');
+const say = (m, err) => { const e = $('#status'); e.textContent = m; e.classList.toggle('err', !!err); };
+
+let DATOS = null, carta = null, modo = null;
+let audio = new Audio(); audio.preload = 'none';
+let t0 = 0, reloj = null, sonando = false;
+let iniciado = false, spotifyFallo = false;
+
+/* ══════════════════ JSONP (iTunes no manda cabeceras CORS) ══════════════════ */
+function jsonp(url, ms = 9000){
+  return new Promise((ok, fail) => {
+    const cb = '__cb' + Math.random().toString(36).slice(2), s = document.createElement('script');
+    const kill = () => { delete window[cb]; s.remove(); clearTimeout(to); };
+    const to = setTimeout(() => { kill(); fail(new Error('timeout')); }, ms);
+    window[cb] = d => { kill(); ok(d); };
+    s.onerror = () => { kill(); fail(new Error('red')); };
+    s.src = url + (url.includes('?') ? '&' : '?') + 'callback=' + cb;
+    document.head.appendChild(s);
+  });
+}
+
+async function previewUrl(c){
+  if (c.it){
+    try{
+      const d = await jsonp('https://itunes.apple.com/lookup?id=' + c.it);
+      const r = (d.results || [])[0];
+      if (r && r.previewUrl) return r.previewUrl;
+    }catch(e){}
+  }
+  const q = c.q || (c.ar + ' ' + c.ti);
+  const d = await jsonp('https://itunes.apple.com/search?term=' + encodeURIComponent(q) +
+            '&entity=song&limit=5&country=' + ((DATOS.config && DATOS.config.pais) || 'CL'));
+  const r = (d.results || []).find(x => x.previewUrl);
+  return r ? r.previewUrl : null;
+}
+
+/* ══════════════════ REPRODUCCIÓN ══════════════════ */
+const marcarModo = m => { modo = m; $('#modo').textContent =
+  m === 'spotify' ? 'Spotify · canción completa' : 'Fragmento · 30 s'; };
+
+function tick(){
+  const seg = modo === 'spotify' ? (Date.now() - t0)/1000 : audio.currentTime;
+  const tot = modo === 'spotify' ? 240 : (audio.duration || 30);
+  $('#time').textContent = fmt(seg);
+  $('#fill').style.width = Math.min(100, seg/tot*100) + '%';
+}
+const correr = on => { clearInterval(reloj); if (on) reloj = setInterval(tick, 250); };
+const girar  = on => { sonando = on; $('#disc').classList.toggle('spin', on); correr(on); };
+
+async function reproducir(desdeCero){
+  if (SP.activa() && carta.sp && !spotifyFallo){
+    try{
+      const dev = localStorage.getItem('hitster_disp') || null;
+      if (desdeCero || !iniciado){ await SP.tocar(carta.sp, dev); t0 = Date.now(); iniciado = true; }
+      else await SP.reanudar();
+      marcarModo('spotify'); girar(true); say('Sonando en Spotify');
+      return;
+    }catch(e){ spotifyFallo = true; say(e.message + ' — sigo con el fragmento de 30 s', true); }
+  }
+  try{
+    if (!audio.src){
+      say('Buscando el fragmento…');
+      const u = await previewUrl(carta);
+      if (!u) return say('No encontré audio para esta carta', true);
+      audio.src = u;
+    }
+    if (desdeCero) audio.currentTime = 0;
+    marcarModo('preview');
+    await audio.play();
+  }catch(e){ say('Toca el disco para reproducir', true); }
+}
+
+async function pausar(){
+  if (modo === 'spotify'){ try{ await SP.pausar(); }catch(e){} girar(false); say('En pausa'); }
+  else audio.pause();
+}
+
+audio.addEventListener('play',  () => { girar(true);  say('Sonando'); });
+audio.addEventListener('pause', () => { girar(false); say('En pausa'); });
+audio.addEventListener('ended', () => { girar(false); say('Fin del fragmento'); });
+audio.addEventListener('error', () => say('Error al cargar el audio', true));
+
+/* ══════════════════ VISTAS ══════════════════ */
+function ver(cual){
+  ['inicio','juego','panel'].forEach(v =>
+    $('#' + v).classList.toggle('hide', v !== cual));
+}
+
+let confirmando = false;
+function abrirCarta(c){
+  carta = c; iniciado = false; spotifyFallo = false; confirmando = false;
+  audio.pause(); audio.removeAttribute('src');
+  $('#resp').classList.add('hide');
+  $('#bResp').classList.remove('hide'); $('#bResp').textContent = 'Ver respuesta';
+  $('#fill').style.width = '0'; $('#time').textContent = '0:00';
+  marcarModo(SP.activa() && c.sp ? 'spotify' : 'preview');
+  ver('juego');
+  reproducir(true);           // arranca sola: venimos de un toque del usuario
+}
+
+/* ══════════════════ ESCÁNER ══════════════════ */
+let stream = null, escaneando = false, detector = null, jsqrListo = false;
+
+const hayCamara = () => !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+
+function cargarJsQR(){
+  if (jsqrListo || window.jsQR) return Promise.resolve();
+  return new Promise((ok, fail) => {
+    const s = document.createElement('script');
+    s.src = 'jsqr.js';
+    s.onload = () => { jsqrListo = true; ok(); };
+    s.onerror = () => fail(new Error('no pude cargar el lector'));
+    document.head.appendChild(s);
+  });
+}
+
+/** Saca el id de carta de lo que sea que diga el QR. */
+function idDeTexto(txt){
+  const m = String(txt).match(/[#?&]c=([A-Za-z0-9_-]+)/);
+  if (m) return m[1];
+  const limpio = String(txt).trim();
+  return /^[a-z0-9]{3,8}$/i.test(limpio) ? limpio : null;
+}
+
+async function abrirCamara(){
+  if (!hayCamara()) return alert('Este navegador no da acceso a la cámara.');
+  $('#camara').classList.add('on');
+  $('#camTxt').textContent = 'Apunta al código de una carta';
+  try{
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280 } }, audio: false });
+  }catch(e){
+    cerrarCamara();
+    return alert('No pude abrir la cámara.\n\n' +
+      'Revisa que le hayas dado permiso a esta página y que estés entrando por https.');
+  }
+  const v = $('#video');
+  v.srcObject = stream; v.setAttribute('playsinline', ''); await v.play();
+
+  // Detector nativo donde exista (Chrome Android); jsQR en iPhone y Firefox
+  detector = null;
+  if ('BarcodeDetector' in window){
+    try{
+      const fs = await BarcodeDetector.getSupportedFormats();
+      if (fs.includes('qr_code')) detector = new BarcodeDetector({ formats: ['qr_code'] });
+    }catch(e){}
+  }
+  if (!detector){
+    try{ await cargarJsQR(); }
+    catch(e){ cerrarCamara(); return alert('No pude cargar el lector de códigos.'); }
+  }
+  escaneando = true;
+  bucle();
+}
+
+function cerrarCamara(){
+  escaneando = false;
+  if (stream){ stream.getTracks().forEach(t => t.stop()); stream = null; }
+  $('#video').srcObject = null;
+  $('#camara').classList.remove('on');
+}
+
+let lienzo = null, ctx = null, ultimoAviso = 0;
+
+async function bucle(){
+  if (!escaneando) return;
+  const v = $('#video');
+  let texto = null;
+
+  if (v.readyState >= 2){
+    try{
+      if (detector){
+        const cs = await detector.detect(v);
+        if (cs.length) texto = cs[0].rawValue;
+      } else if (window.jsQR){
+        if (!lienzo){ lienzo = document.createElement('canvas'); ctx = lienzo.getContext('2d', { willReadFrequently: true }); }
+        const esc = Math.min(1, 480 / Math.max(v.videoWidth, 1));
+        lienzo.width  = Math.round(v.videoWidth  * esc);
+        lienzo.height = Math.round(v.videoHeight * esc);
+        ctx.drawImage(v, 0, 0, lienzo.width, lienzo.height);
+        const d = ctx.getImageData(0, 0, lienzo.width, lienzo.height);
+        const r = window.jsQR(d.data, d.width, d.height, { inversionAttempts: 'dontInvert' });
+        if (r) texto = r.data;
+      }
+    }catch(e){}
+  }
+
+  if (texto){
+    const id = idDeTexto(texto);
+    const c  = id && (DATOS.cartas || []).find(x => x.id === id);
+    if (c){
+      if (navigator.vibrate) navigator.vibrate(35);
+      cerrarCamara();
+      abrirCarta(c);
+      return;
+    }
+    if (Date.now() - ultimoAviso > 1500){
+      ultimoAviso = Date.now();
+      $('#camTxt').textContent = 'Ese código no es de este mazo';
+      setTimeout(() => { if (escaneando) $('#camTxt').textContent = 'Apunta al código de una carta'; }, 1400);
+    }
+  }
+  // ~12 lecturas por segundo: suficiente y no calienta el teléfono
+  setTimeout(() => requestAnimationFrame(bucle), detector ? 60 : 90);
+}
+
+/* ══════════════════ AJUSTES ══════════════════ */
+async function pintarSpotify(){
+  const on = SP.activa();
+  $('#dSp').className = 'dot ' + (on ? 'on' : 'off');
+  $('#txtSp').textContent = on ? 'Conectado' : 'Sin conectar';
+  $('#bSp').textContent   = on ? 'Reconectar' : 'Conectar';
+  $('#zonaDisp').classList.toggle('hide', !on);
+  if (on) cargarDispositivos();
+}
+
+async function cargarDispositivos(){
+  const sel = $('#disp');
+  try{
+    const ds = await SP.dispositivos();
+    if (!ds.length){ sel.innerHTML = '<option>— ningún dispositivo con Spotify abierto —</option>'; return; }
+    const guardado = localStorage.getItem('hitster_disp');
+    sel.innerHTML = ds.map(d =>
+      `<option value="${d.id}" ${d.id === guardado || (!guardado && d.is_active) ? 'selected' : ''}>` +
+      `${d.name} · ${d.type}${d.is_active ? ' (activo)' : ''}</option>`).join('');
+    if (!guardado && sel.value) localStorage.setItem('hitster_disp', sel.value);
+  }catch(e){ sel.innerHTML = `<option>${e.message}</option>`; }
+}
+
+/* ══════════════════ BOTONES ══════════════════ */
+$('#bEscanear').onclick  = abrirCamara;
+$('#bOtra').onclick      = () => { audio.pause(); abrirCamara(); };
+$('#bCerrarCam').onclick = cerrarCamara;
+$('#bAjustes2').onclick  = () => { ver('panel'); pintarSpotify(); };
+$('#bVolverInicio').onclick = () => ver('inicio');
+$('#disc').onclick       = () => sonando ? pausar() : reproducir(false);
+$('#bReinicio').onclick  = () => reproducir(true);
+$('#bResp').onclick = e => {
+  if (!confirmando){ confirmando = true; e.target.textContent = '¿Seguro? Toca de nuevo'; return; }
+  $('#resp').classList.remove('hide');
+  $('#resp').innerHTML = `<div class="ar">${carta.ar}</div><div class="yr">${carta.y}</div><div class="ti">${carta.ti}</div>`;
+  e.target.classList.add('hide');
+};
+$('#disp').onchange  = e => localStorage.setItem('hitster_disp', e.target.value);
+$('#bDisp').onclick  = cargarDispositivos;
+$('#bSalir').onclick = () => { SP.salir(); pintarSpotify(); };
+$('#bSp').onclick    = () => {
+  const id = DATOS && DATOS.config && DATOS.config.clientId;
+  if (!id || id === 'PEGA_AQUI_TU_CLIENT_ID')
+    return alert('Falta el Client ID de Spotify en cartas.json (config.clientId).');
+  SP.entrar(id, location.hash);
+};
+document.addEventListener('visibilitychange', () => { if (document.hidden) cerrarCamara(); });
+
+/* ══════════════════ ARRANQUE ══════════════════ */
+(async function(){
+  const ret = await SP.capturarRetorno();
+  if (ret && ret.error) console.warn('Spotify:', ret.error);
+
+  try{ DATOS = await (await fetch('cartas.json?v=' + Date.now())).json(); }
+  catch(e){
+    document.body.innerHTML = '<p style="color:#e05b5b;max-width:340px">' +
+      'No pude cargar <code>cartas.json</code>. Debe estar en la misma carpeta que esta página.</p>';
+    return;
+  }
+
+  const n = (DATOS.cartas || []).length;
+  const conSp = (DATOS.cartas || []).filter(c => c.sp).length;
+  $('#meta').textContent = `${n} cartas en el mazo`;
+  $('#hintSp').innerHTML = `${conSp} de ${n} cartas tienen canción completa en Spotify.<br><br>` +
+    'La <b>Redirect URI</b> a registrar en el dashboard debe ser exactamente:<br>' +
+    '<code>' + SP.redirectUri() + '</code>';
+
+  const nativo = 'BarcodeDetector' in window;
+  $('#hintCam').innerHTML = hayCamara()
+    ? (nativo ? 'Este navegador trae lector de códigos propio: va a ir bien rápido.'
+              : 'Este navegador (iPhone, Firefox) no trae lector propio, así que uso uno incluido en la página. Funciona igual, solo un pelo más lento.')
+    : 'Este navegador no da acceso a la cámara. Escanea con la app de cámara del teléfono.';
+  if (!hayCamara()) $('#bEscanear').classList.add('hide');
+  if (location.protocol !== 'https:' && location.hostname !== 'localhost')
+    $('#avisoCam').textContent = 'La cámara solo funciona por https. Publica el sitio y ábrelo desde ahí.';
+
+  // ¿Llegamos por un QR escaneado con la cámara del teléfono?
+  const id = new URLSearchParams(location.hash.slice(1)).get('c');
+  const c  = id && (DATOS.cartas || []).find(x => x.id === id);
+  if (c){
+    carta = c; ver('juego');
+    marcarModo(SP.activa() && c.sp ? 'spotify' : 'preview');
+    say('Toca el disco');       // sin gesto previo el navegador no deja sonar sola
+    previewUrl(c).then(u => { if (u && !SP.activa()) audio.src = u; }).catch(() => {});
+  } else {
+    ver('inicio');
+    if (id) $('#meta').textContent = `La carta "${id}" no está en este mazo`;
+  }
+})();
+
+window.addEventListener('hashchange', () => location.reload());
+</script>
+</body>
+</html>

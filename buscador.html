@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hitster Tuti — buscador de canciones</title>
+<style>
+  :root{--bg:#0b0b0f;--fg:#f4f4f6;--dim:#8a8a99;--line:#21212b;--accent:#e8b53a;--bad:#e05b5b;--ok:#4ec97e;--warn:#e8b53a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:28px 20px 80px;font-size:14px;line-height:1.5}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-size:22px;margin:0 0 6px} .sub{color:var(--dim);margin:0 0 26px;max-width:720px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px}
+  .card h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:0 0 14px;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+  label{display:block;font-size:12px;color:var(--dim);margin-bottom:5px}
+  input,select,textarea{background:#14141b;border:1px solid var(--line);color:var(--fg);border-radius:9px;
+    padding:9px 11px;font:inherit;font-size:13px;width:100%}
+  textarea{min-height:150px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.6}
+  button{appearance:none;font:inherit;cursor:pointer;border-radius:99px}
+  .ghost{border:1px solid var(--line);background:transparent;color:var(--dim);padding:9px 16px;font-size:13px}
+  .ghost:hover{background:#16161d;color:var(--fg)}
+  .solid{border:none;background:var(--accent);color:#0b0b0f;padding:11px 22px;font-size:14px;font-weight:600}
+  .solid:disabled{opacity:.35;cursor:not-allowed}
+  .row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:7px;background:var(--dim)}
+  .dot.on{background:var(--ok)} .dot.off{background:var(--bad)}
+  .hint{font-size:12px;color:var(--dim);margin-top:10px}
+  code{background:#14141b;border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:12px;word-break:break-all}
+  .prog{height:5px;background:#20202a;border-radius:99px;overflow:hidden;margin-top:12px}
+  .prog>i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--dim);
+    font-weight:600;padding:9px 8px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:2}
+  td{padding:7px 8px;border-bottom:1px solid #16161d;vertical-align:middle}
+  tr.rev{background:rgba(232,181,58,.06)}
+  tr.no{opacity:.35}
+  td input[type=text]{padding:6px 8px;font-size:13px}
+  td input.yr{width:74px;text-align:center;font-variant-numeric:tabular-nums}
+  td input.yr.rev{border-color:var(--warn);color:var(--warn)}
+  .match{font-size:12px;color:var(--dim);line-height:1.35}
+  .match b{color:var(--fg);font-weight:500}
+  .flag{display:inline-block;font-size:10px;letter-spacing:.05em;text-transform:uppercase;
+    border:1px solid var(--warn);color:var(--warn);border-radius:99px;padding:1px 7px;margin:2px 3px 0 0}
+  .flag.bad{border-color:var(--bad);color:var(--bad)}
+  .mini{border:1px solid var(--line);background:transparent;color:var(--dim);border-radius:7px;
+    padding:4px 8px;font-size:11px;cursor:pointer;white-space:nowrap}
+  .mini:hover{color:var(--fg)}
+  .stat{display:inline-block;margin-right:20px;font-size:13px}
+  .stat b{font-size:19px;font-variant-numeric:tabular-nums;display:block;font-weight:600}
+  .hide{display:none!important}
+  .bottom{position:fixed;left:0;right:0;bottom:0;background:rgba(11,11,15,.94);backdrop-filter:blur(8px);
+    border-top:1px solid var(--line);padding:13px 20px;z-index:10}
+  .bottom .wrap{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Buscador de canciones</h1>
+<p class="sub">Pega acá la lista del <b>Consolidado</b> del Google Sheet. Esta página busca cada canción
+en Spotify y en iTunes, propone el año de lanzamiento más antiguo que encuentre (para no quedarte
+con el año de una remasterización) y te marca los casos dudosos para que los revises a mano.
+Al final descargas <code>cartas.json</code>.</p>
+
+<!-- ══ 1. CONFIGURACIÓN ══ -->
+<div class="card">
+  <h2>1 · Configuración</h2>
+  <div class="grid">
+    <div><label>Client ID de Spotify</label><input id="cid" placeholder="32 caracteres del dashboard"></div>
+    <div><label>País (catálogo y disponibilidad)</label><input id="pais" value="CL"></div>
+    <div><label>Pausa entre búsquedas (ms)</label><input id="delay" type="number" value="700" min="200" step="100"></div>
+  </div>
+  <div class="row" style="margin-top:14px">
+    <span><i class="dot" id="dSp"></i><span id="txtSp">Spotify sin conectar</span></span>
+    <button class="ghost" id="bSp">Conectar Spotify</button>
+    <button class="ghost hide" id="bSalir">Cerrar sesión</button>
+  </div>
+  <div class="hint">Sin Spotify igual funciona, pero las cartas quedan solo con fragmentos de 30 s.
+    La <b>Redirect URI</b> a registrar para esta página es <code id="ru"></code></div>
+</div>
+
+<!-- ══ 2. LISTA ══ -->
+<div class="card">
+  <h2>2 · Pega tu lista</h2>
+  <textarea id="entrada" placeholder="Copia las filas del Consolidado (con encabezado y todo), o escribe una canción por línea:&#10;&#10;Queen - Bohemian Rhapsody&#10;Los Prisioneros - Tren al sur&#10;Daft Punk - Get Lucky"></textarea>
+  <div class="row" style="margin-top:13px">
+    <button class="solid" id="bIr">Buscar todas</button>
+    <button class="ghost" id="bEjemplo">Cargar ejemplo</button>
+    <span class="hint" style="margin:0" id="cuenta"></span>
+  </div>
+  <div class="prog hide" id="prog"><i id="progI"></i></div>
+  <div class="hint hide" id="progT"></div>
+</div>
+
+<!-- ══ 3. RESULTADOS ══ -->
+<div class="card hide" id="cRes">
+  <h2>3 · Revisa y corrige</h2>
+  <div style="margin-bottom:16px">
+    <span class="stat"><b id="sTot">0</b>cartas</span>
+    <span class="stat"><b id="sRev" style="color:var(--warn)">0</b>a revisar</span>
+    <span class="stat"><b id="sSp" style="color:var(--ok)">0</b>con Spotify</span>
+    <span class="stat"><b id="sPv">0</b>con fragmento</span>
+  </div>
+  <div class="row" style="margin-bottom:14px">
+    <button class="ghost" id="bFiltro">Ver solo los dudosos</button>
+    <button class="ghost" id="bReintentar">Reintentar los fallidos</button>
+  </div>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr>
+        <th style="width:34px"></th><th>Artista</th><th>Canción</th>
+        <th style="width:88px">Año</th><th>Coincidencia encontrada</th><th style="width:150px"></th>
+      </tr></thead>
+      <tbody id="tb"></tbody>
+    </table>
+  </div>
+</div>
+
+</div>
+
+<div class="bottom hide" id="barra"><div class="wrap">
+  <span class="hint" style="margin:0" id="pie"></span>
+  <div class="row">
+    <button class="ghost" id="bCopiar">Copiar JSON</button>
+    <button class="solid" id="bBajar">Descargar cartas.json</button>
+  </div>
+</div></div>
+
+<audio id="au"></audio>
+<script src="auth.js"></script>
+<script>
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const dormir = ms => new Promise(r => setTimeout(r, ms));
+let FILAS = [], soloDudosos = false;
+
+/* ══════════ utilidades de texto ══════════ */
+const norm = s => String(s || '').toLowerCase().normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '')
+  .replace(/\(.*?\)|\[.*?\]/g, ' ')
+  .replace(/\b(feat|ft|featuring|con|with|remaster(ed|izado)?|remix|version|versi[oó]n|en vivo|live|deluxe|edition|edici[oó]n|anniversary|mono|stereo)\b/g, ' ')
+  .replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+
+/** Parecido por solapamiento de palabras (0 a 1). */
+function sim(a, b){
+  const A = new Set(norm(a).split(' ').filter(Boolean));
+  const B = new Set(norm(b).split(' ').filter(Boolean));
+  if (!A.size || !B.size) return 0;
+  let hit = 0; A.forEach(w => { if (B.has(w)) hit++; });
+  return hit / Math.max(A.size, B.size);
+}
+
+/** id corto y estable: la misma canción da siempre el mismo id. */
+function idDe(ar, ti){
+  const s = norm(ar) + '|' + norm(ti);
+  let h1 = 0x811c9dc5, h2 = 0x01000193;
+  for (const ch of s){
+    h1 = Math.imul(h1 ^ ch.charCodeAt(0), 0x01000193) >>> 0;
+    h2 = Math.imul(h2 + ch.charCodeAt(0), 0x85ebca6b) >>> 0;
+  }
+  return (h1.toString(36) + h2.toString(36)).replace(/[^a-z0-9]/g, '').slice(0, 5);
+}
+
+const anio = f => { const m = String(f || '').match(/\d{4}/); return m ? +m[0] : null; };
+const SOSPECHOSO = /remaster|remasteriz|anniversary|deluxe|greatest hits|best of|en vivo|live|karaoke|tribute|cover|made popular|originally performed/i;
+
+/* ══════════ lectura de la lista pegada ══════════ */
+function leerEntrada(txt){
+  const out = [];
+  for (let linea of txt.split(/\r?\n/)){
+    if (!linea.trim()) continue;
+    let ar = '', ti = '', y = null, inc = true;
+
+    if (linea.includes('\t')){
+      const c = linea.split('\t');
+      if (/^id$/i.test(c[0] || '') || /^artista$/i.test(c[1] || '') || /^artista$/i.test(c[0] || '')) continue; // encabezado
+      const off = /^C\d+$/i.test((c[0] || '').trim()) ? 1 : 0;   // con o sin columna ID
+      ar = (c[off] || '').trim();
+      ti = (c[off + 1] || '').trim();
+      y  = anio(c[off + 2]);
+      const casilla = c[off + 5];
+      if (casilla !== undefined && /^(false|no|0)$/i.test(String(casilla).trim())) inc = false;
+    } else {
+      const p = linea.split(/\s+[-–—]\s+/);
+      if (p.length >= 2){ ar = p[0].trim(); ti = p.slice(1).join(' - ').trim(); }
+      else { ti = linea.trim(); }
+    }
+    if (!ti && !ar) continue;
+    out.push({ ar, ti, y, inc, sp:null, it:null, mSp:null, mIt:null, flags:[], listo:false });
+  }
+  return out;
+}
+
+/* ══════════ búsquedas ══════════ */
+function jsonp(url, ms = 10000){
+  return new Promise((ok, fail) => {
+    const cb = '__cb' + Math.random().toString(36).slice(2), s = document.createElement('script');
+    const kill = () => { delete window[cb]; s.remove(); clearTimeout(to); };
+    const to = setTimeout(() => { kill(); fail(new Error('timeout')); }, ms);
+    window[cb] = d => { kill(); ok(d); };
+    s.onerror = () => { kill(); fail(new Error('red')); };
+    s.src = url + (url.includes('?') ? '&' : '?') + 'callback=' + cb;
+    document.head.appendChild(s);
+  });
+}
+
+async function buscarSpotify(f){
+  const q = (f.ar ? f.ar + ' ' : '') + f.ti;
+  const d = await SP.api('/search?type=track&limit=10&market=' + $('#pais').value.trim() +
+                         '&q=' + encodeURIComponent(q));
+  return ((d.tracks && d.tracks.items) || []).map(t => ({
+    id: t.id, ti: t.name, ar: t.artists.map(a => a.name).join(', '),
+    album: t.album.name, y: anio(t.album.release_date),
+    score: (sim(f.ti, t.name) * 2 + (f.ar ? sim(f.ar, t.artists.map(a => a.name).join(' ')) : 1)) / 3
+  })).sort((a, b) => b.score - a.score);
+}
+
+async function buscarItunes(f){
+  const q = (f.ar ? f.ar + ' ' : '') + f.ti;
+  const d = await jsonp('https://itunes.apple.com/search?entity=song&limit=10&country=' +
+    $('#pais').value.trim() + '&term=' + encodeURIComponent(q));
+  return (d.results || []).map(r => ({
+    id: String(r.trackId), ti: r.trackName, ar: r.artistName,
+    album: r.collectionName || '', y: anio(r.releaseDate), preview: r.previewUrl,
+    score: (sim(f.ti, r.trackName) * 2 + (f.ar ? sim(f.ar, r.artistName) : 1)) / 3
+  })).filter(r => r.preview).sort((a, b) => b.score - a.score);
+}
+
+/* ══════════ resolver una fila ══════════ */
+async function resolver(f){
+  f.flags = [];
+  const usarSp = SP.activa();
+
+  if (usarSp){
+    try { f.candSp = await buscarSpotify(f); }
+    catch(e){ f.candSp = []; f.flags.push(['Spotify: ' + e.message, true]); }
+  } else f.candSp = [];
+
+  try { f.candIt = await buscarItunes(f); }
+  catch(e){ f.candIt = []; f.flags.push(['iTunes: ' + e.message, true]); }
+
+  f.mSp = f.candSp[0] || null;
+  f.mIt = f.candIt[0] || null;
+  f.sp  = f.mSp ? f.mSp.id : null;
+  f.it  = f.mIt ? f.mIt.id : null;
+
+  // Nombres bonitos: preferimos los de Spotify, que vienen mejor escritos
+  const ref = f.mSp || f.mIt;
+  if (ref){ if (!f.ar) f.ar = ref.ar; f.tiRef = ref.ti; }
+
+  // ── Año: el más antiguo entre todas las coincidencias buenas ──
+  const buenos = [...f.candSp, ...f.candIt].filter(c => c.score >= 0.6 && c.y);
+  const anios  = buenos.map(c => c.y);
+  const minY   = anios.length ? Math.min(...anios) : null;
+  const yaTenia = f.y;
+  if (!f.y) f.y = minY;
+
+  // ── Señales para revisar a mano ──
+  const mejor = Math.max(f.mSp ? f.mSp.score : 0, f.mIt ? f.mIt.score : 0);
+  if (!f.mSp && !f.mIt)      f.flags.push(['sin resultados', true]);
+  else {
+    if (!f.mSp && usarSp)    f.flags.push(['sin Spotify', true]);
+    if (!f.mIt)              f.flags.push(['sin fragmento', true]);
+    if (mejor < 0.75)        f.flags.push(['coincidencia débil', true]);
+    if (ref && SOSPECHOSO.test(ref.album + ' ' + ref.ti)) f.flags.push(['puede ser reedición']);
+    if (f.y && f.y < 2000)   f.flags.push(['clásico: confirma el año']);
+    if (minY && ref && ref.y && ref.y - minY > 1) f.flags.push([`el álbum dice ${ref.y}`]);
+    if (f.mSp && f.mIt && f.mSp.y && f.mIt.y && Math.abs(f.mSp.y - f.mIt.y) > 1)
+      f.flags.push([`Spotify ${f.mSp.y} vs iTunes ${f.mIt.y}`]);
+    if (yaTenia && minY && Math.abs(yaTenia - minY) > 1) f.flags.push([`tu hoja decía ${yaTenia}`]);
+  }
+  f.listo = true;
+}
+
+/* ══════════ pintar la tabla ══════════ */
+const rev = f => f.flags.length > 0;
+
+function pintar(){
+  $('#tb').innerHTML = FILAS.map((f, i) => {
+    if (soloDudosos && !rev(f)) return '';
+    const m = f.mSp || f.mIt;
+    return `<tr class="${rev(f) ? 'rev' : ''} ${f.inc ? '' : 'no'}" data-i="${i}">
+      <td><input type="checkbox" data-k="inc" ${f.inc ? 'checked' : ''}></td>
+      <td><input type="text" data-k="ar" value="${esc(f.ar)}"></td>
+      <td><input type="text" data-k="ti" value="${esc(f.ti)}"></td>
+      <td><input type="text" class="yr ${rev(f) ? 'rev' : ''}" data-k="y" value="${f.y || ''}"></td>
+      <td><div class="match">${m
+          ? `<b>${esc(m.ar)}</b> — ${esc(m.ti)}<br>${esc(m.album)}${m.y ? ' · ' + m.y : ''}
+             ${f.mSp ? ' · Spotify' : ''}${f.mIt ? ' · fragmento' : ''}`
+          : '<span style="color:var(--bad)">nada encontrado</span>'}
+        <div>${f.flags.map(x => `<span class="flag ${x[1] ? 'bad' : ''}">${esc(x[0])}</span>`).join('')}</div>
+        </div></td>
+      <td><div class="row" style="gap:5px">
+        ${f.mIt ? `<button class="mini" data-a="oir">▶ Oír</button>` : ''}
+        ${(f.candSp.length + f.candIt.length) > 1 ? `<button class="mini" data-a="otra">Otra</button>` : ''}
+      </div></td></tr>`;
+  }).join('');
+  stats();
+}
+
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function stats(){
+  const act = FILAS.filter(f => f.inc);
+  $('#sTot').textContent = act.length;
+  $('#sRev').textContent = act.filter(rev).length;
+  $('#sSp').textContent  = act.filter(f => f.sp).length;
+  $('#sPv').textContent  = act.filter(f => f.it).length;
+  $('#pie').textContent  = `${act.length} cartas listas · ${act.filter(rev).length} con algo que revisar`;
+}
+
+/* edición en línea */
+$('#tb').addEventListener('input', e => {
+  const tr = e.target.closest('tr'); if (!tr) return;
+  const f = FILAS[+tr.dataset.i], k = e.target.dataset.k;
+  if (!k) return;
+  if (k === 'inc'){ f.inc = e.target.checked; tr.classList.toggle('no', !f.inc); }
+  else if (k === 'y'){ f.y = +e.target.value || null; }
+  else f[k] = e.target.value;
+  stats();
+});
+
+/* oír / cambiar coincidencia */
+$('#tb').addEventListener('click', async e => {
+  const b = e.target.closest('button[data-a]'); if (!b) return;
+  const tr = b.closest('tr'), f = FILAS[+tr.dataset.i];
+  if (b.dataset.a === 'oir'){
+    const c = f.candIt.find(c => c.id === f.it) || f.mIt;
+    const au = $('#au');
+    if (!au.paused && au.dataset.id === f.it){ au.pause(); b.textContent = '▶ Oír'; return; }
+    au.src = c.preview; au.dataset.id = f.it; au.play();
+    b.textContent = '⏸ Pausa';
+    au.onended = () => b.textContent = '▶ Oír';
+  }
+  if (b.dataset.a === 'otra'){
+    const todos = [...f.candSp.map(c => ({...c, src:'sp'})), ...f.candIt.map(c => ({...c, src:'it'}))];
+    const idx = (todos.findIndex(c => c.id === (f.mSp ? f.mSp.id : f.it)) + 1) % todos.length;
+    const c = todos[idx];
+    if (c.src === 'sp'){ f.mSp = c; f.sp = c.id; } else { f.mIt = c; f.it = c.id; }
+    if (c.y) f.y = c.y;
+    pintar();
+  }
+});
+
+/* ══════════ proceso principal ══════════ */
+async function procesar(soloFallidos){
+  const objetivo = soloFallidos ? FILAS.filter(f => !f.mSp && !f.mIt) : (FILAS = leerEntrada($('#entrada').value));
+  const lista = soloFallidos ? objetivo : FILAS;
+  if (!lista.length) return alert('No encontré canciones en lo que pegaste.');
+
+  $('#cRes').classList.remove('hide'); $('#barra').classList.remove('hide');
+  $('#prog').classList.remove('hide'); $('#progT').classList.remove('hide');
+  $('#bIr').disabled = true;
+  const espera = +$('#delay').value || 700;
+
+  for (let i = 0; i < lista.length; i++){
+    $('#progT').textContent = `Buscando ${i + 1} de ${lista.length}: ${lista[i].ar} — ${lista[i].ti}`;
+    $('#progI').style.width = (i / lista.length * 100) + '%';
+    try { await resolver(lista[i]); }
+    catch(e){ lista[i].flags = [['error: ' + e.message, true]]; }
+    pintar();
+    if (i < lista.length - 1) await dormir(espera);
+  }
+  $('#progI').style.width = '100%';
+  $('#progT').textContent = `Listo: ${lista.length} canciones procesadas.`;
+  $('#bIr').disabled = false;
+  pintar();
+}
+
+$('#bIr').onclick = () => procesar(false);
+$('#bReintentar').onclick = () => procesar(true);
+$('#bFiltro').onclick = e => { soloDudosos = !soloDudosos;
+  e.target.textContent = soloDudosos ? 'Ver todas' : 'Ver solo los dudosos'; pintar(); };
+$('#bEjemplo').onclick = () => $('#entrada').value =
+  ['Queen - Bohemian Rhapsody','Los Prisioneros - Tren al sur','Daft Punk - Get Lucky',
+   'Shakira - Hips Don\'t Lie','a-ha - Take On Me','Soda Stereo - De música ligera',
+   'Michael Jackson - Billie Jean','Gloria Gaynor - I Will Survive'].join('\n');
+
+/* ══════════ exportar ══════════ */
+function construir(){
+  return JSON.stringify({
+    config: { clientId: $('#cid').value.trim() || 'PEGA_AQUI_TU_CLIENT_ID', pais: $('#pais').value.trim() || 'CL' },
+    generado: new Date().toISOString().slice(0, 10),
+    cartas: FILAS.filter(f => f.inc && (f.sp || f.it)).map(f => ({
+      id: idDe(f.ar, f.ti), ar: f.ar, ti: f.ti, y: f.y || null,
+      sp: f.sp || null, it: f.it || null, q: (f.ar + ' ' + f.ti).trim()
+    }))
+  }, null, 1);
+}
+$('#bBajar').onclick = () => {
+  const b = new Blob([construir()], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(b); a.download = 'cartas.json'; a.click();
+};
+$('#bCopiar').onclick = async e => {
+  await navigator.clipboard.writeText(construir());
+  e.target.textContent = '¡Copiado!'; setTimeout(() => e.target.textContent = 'Copiar JSON', 1600);
+};
+
+/* ══════════ Spotify ══════════ */
+function pintarSp(){
+  const on = SP.activa();
+  $('#dSp').className = 'dot ' + (on ? 'on' : 'off');
+  $('#txtSp').textContent = on ? 'Spotify conectado' : 'Spotify sin conectar';
+  $('#bSp').textContent = on ? 'Reconectar' : 'Conectar Spotify';
+  $('#bSalir').classList.toggle('hide', !on);
+}
+$('#bSp').onclick = () => {
+  const id = $('#cid').value.trim();
+  if (!id) return alert('Primero pega tu Client ID de Spotify.');
+  localStorage.setItem('hitster_cid', id);
+  SP.entrar(id);
+};
+$('#bSalir').onclick = () => { SP.salir(); pintarSp(); };
+$('#cid').oninput = e => localStorage.setItem('hitster_cid', e.target.value.trim());
+
+(async function(){
+  $('#ru').textContent = SP.redirectUri();
+  $('#cid').value = localStorage.getItem('hitster_cid') || '';
+  const r = await SP.capturarRetorno();
+  if (r && r.error) alert('Spotify: ' + r.error);
+  pintarSp();
+})();
+</script>
+</body>
+</html>
