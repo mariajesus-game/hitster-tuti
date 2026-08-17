@@ -214,6 +214,7 @@ async function buscarSpotify(f){
   return ((d.tracks && d.tracks.items) || []).map(t => ({
     id: t.id, ti: t.name, ar: t.artists.map(a => a.name).join(', '),
     album: t.album.name, y: anio(t.album.release_date),
+    du: t.duration_ms ? Math.round(t.duration_ms / 1000) : null,
     score: (sim(f.ti, t.name) * 2 + (f.ar ? sim(f.ar, t.artists.map(a => a.name).join(' ')) : 1)) / 3
   })).sort((a, b) => b.score - a.score);
 }
@@ -246,6 +247,7 @@ async function resolver(f){
   f.mIt = f.candIt[0] || null;
   f.sp  = f.mSp ? f.mSp.id : null;
   f.it  = f.mIt ? f.mIt.id : null;
+  f.du  = f.mSp ? f.mSp.du : null;   // duración: permite arrancar el extracto más adelante
 
   // Nombres bonitos: preferimos los de Spotify, que vienen mejor escritos
   const ref = f.mSp || f.mIt;
@@ -339,7 +341,7 @@ $('#tb').addEventListener('click', async e => {
     const todos = [...f.candSp.map(c => ({...c, src:'sp'})), ...f.candIt.map(c => ({...c, src:'it'}))];
     const idx = (todos.findIndex(c => c.id === (f.mSp ? f.mSp.id : f.it)) + 1) % todos.length;
     const c = todos[idx];
-    if (c.src === 'sp'){ f.mSp = c; f.sp = c.id; } else { f.mIt = c; f.it = c.id; }
+    if (c.src === 'sp'){ f.mSp = c; f.sp = c.id; f.du = c.du; } else { f.mIt = c; f.it = c.id; }
     if (c.y) f.y = c.y;
     pintar();
   }
@@ -386,7 +388,8 @@ function construir(){
     generado: new Date().toISOString().slice(0, 10),
     cartas: FILAS.filter(f => f.inc && (f.sp || f.it)).map(f => ({
       id: idDe(f.ar, f.ti), ar: f.ar, ti: f.ti, y: f.y || null,
-      sp: f.sp || null, it: f.it || null, q: (f.ar + ' ' + f.ti).trim()
+      sp: f.sp || null, it: f.it || null, du: f.du || null,
+      q: (f.ar + ' ' + f.ti).trim()
     }))
   }, null, 1);
 }

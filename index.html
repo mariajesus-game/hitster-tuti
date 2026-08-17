@@ -108,6 +108,7 @@
   <button class="solid" id="bEscanear">Escanear carta</button>
   <div class="row">
     <button class="ghost" id="bAjustes2">Ajustes</button>
+    <button class="ghost hide" id="bInstalar">Instalar app</button>
   </div>
   <p class="hint" id="avisoCam" style="max-width:320px"></p>
 </div>
@@ -152,6 +153,27 @@
   </div>
 
   <div class="card">
+    <h2>Cuánto suena cada carta</h2>
+    <div style="margin-bottom:7px;color:var(--dim);font-size:12px">Duración</div>
+    <select id="dur">
+      <option value="0">Canción completa</option>
+      <option value="30">30 segundos</option>
+      <option value="20">20 segundos</option>
+      <option value="15">15 segundos</option>
+      <option value="10">10 segundos — modo difícil</option>
+    </select>
+    <div style="margin:14px 0 7px;color:var(--dim);font-size:12px">Desde dónde empieza</div>
+    <select id="ini">
+      <option value="0">Desde el principio</option>
+      <option value="0.2">Un poco más adelante (20 %)</option>
+      <option value="0.33">Hacia el primer coro (33 %)</option>
+    </select>
+    <div class="hint">Con Spotify esto corta la canción de verdad. En modo fragmento el
+      recorte se aplica sobre los 30 s que trae iTunes, y ahí no se puede adelantar el
+      punto de partida.</div>
+  </div>
+
+  <div class="card">
     <h2>Respaldo — fragmento de 30 s</h2>
     <div class="hint" style="margin-top:0">Siempre disponible, sin cuenta ni configuración.
       Se usa solo si Spotify no está conectado o si no hay ningún dispositivo activo.</div>
@@ -183,6 +205,7 @@ let DATOS = null, carta = null, modo = null;
 let audio = new Audio(); audio.preload = 'none';
 let t0 = 0, reloj = null, sonando = false;
 let iniciado = false, spotifyFallo = false;
+let transcurrido = 0;   // segundos ya sonados, para poder reanudar donde iba
 
 /* ══════════════════ JSONP (iTunes no manda cabeceras CORS) ══════════════════ */
 function jsonp(url, ms = 9000){
@@ -213,25 +236,63 @@ async function previewUrl(c){
 }
 
 /* ══════════════════ REPRODUCCIÓN ══════════════════ */
-const marcarModo = m => { modo = m; $('#modo').textContent =
-  m === 'spotify' ? 'Spotify · canción completa' : 'Fragmento · 30 s'; };
+/* Preferencias de recorte, guardadas en el teléfono */
+const limite  = () => +(localStorage.getItem('hitster_dur') || 0);   // 0 = completa
+const arranque = () => +(localStorage.getItem('hitster_ini') || 0);  // fracción 0–1
+
+const marcarModo = m => {
+  modo = m;
+  const L = limite();
+  $('#modo').textContent = m === 'spotify'
+    ? (L ? `Spotify · ${L} s` : 'Spotify · canción completa')
+    : (L ? `Fragmento · ${L} s` : 'Fragmento · 30 s');
+};
+
+/* Corta la reproducción al llegar al límite (solo hace falta en Spotify;
+   en modo fragmento lo controla el propio elemento de audio). */
+let corte = null;
+function programarCorte(seg){
+  clearTimeout(corte);
+  if (!seg) return;
+  corte = setTimeout(() => { pausar(); say('Fin del extracto'); }, seg * 1000);
+}
 
 function tick(){
-  const seg = modo === 'spotify' ? (Date.now() - t0)/1000 : audio.currentTime;
-  const tot = modo === 'spotify' ? 240 : (audio.duration || 30);
-  $('#time').textContent = fmt(seg);
-  $('#fill').style.width = Math.min(100, seg/tot*100) + '%';
+  const L = limite();
+  const seg = modo === 'spotify' ? (Date.now() - t0)/1000 : audio.currentTime - (audio.dataset.t0 || 0);
+  const tot = L || (modo === 'spotify' ? 240 : (audio.duration || 30));
+  $('#time').textContent = fmt(Math.max(0, seg));
+  $('#fill').style.width = Math.min(100, Math.max(0, seg)/tot*100) + '%';
 }
 const correr = on => { clearInterval(reloj); if (on) reloj = setInterval(tick, 250); };
 const girar  = on => { sonando = on; $('#disc').classList.toggle('spin', on); correr(on); };
+
+/** Dónde arrancar la canción, en milisegundos. */
+async function posicionInicial(){
+  const f = arranque();
+  if (!f) return 0;
+  let dur = carta.du;                       // viene en cartas.json si el buscador la guardó
+  if (!dur) dur = await SP.duracion(carta.sp);
+  if (!dur) return 0;
+  // Nunca tan cerca del final que el extracto se corte solo
+  const tope = Math.max(0, dur - (limite() || 30) - 5);
+  return Math.min(dur * f, tope) * 1000;
+}
 
 async function reproducir(desdeCero){
   if (SP.activa() && carta.sp && !spotifyFallo){
     try{
       const dev = localStorage.getItem('hitster_disp') || null;
-      if (desdeCero || !iniciado){ await SP.tocar(carta.sp, dev); t0 = Date.now(); iniciado = true; }
-      else await SP.reanudar();
+      if (desdeCero || !iniciado){
+        await SP.tocar(carta.sp, dev, await posicionInicial());
+        t0 = Date.now(); iniciado = true; transcurrido = 0;
+      } else {
+        await SP.reanudar();
+        t0 = Date.now() - (transcurrido * 1000);
+      }
       marcarModo('spotify'); girar(true); say('Sonando en Spotify');
+      const L = limite();
+      if (L) programarCorte(L - (desdeCero ? 0 : transcurrido));
       return;
     }catch(e){ spotifyFallo = true; say(e.message + ' — sigo con el fragmento de 30 s', true); }
   }
@@ -241,6 +302,7 @@ async function reproducir(desdeCero){
       const u = await previewUrl(carta);
       if (!u) return say('No encontré audio para esta carta', true);
       audio.src = u;
+      audio.dataset.t0 = 0;
     }
     if (desdeCero) audio.currentTime = 0;
     marcarModo('preview');
@@ -249,9 +311,22 @@ async function reproducir(desdeCero){
 }
 
 async function pausar(){
-  if (modo === 'spotify'){ try{ await SP.pausar(); }catch(e){} girar(false); say('En pausa'); }
-  else audio.pause();
+  clearTimeout(corte);
+  if (modo === 'spotify'){
+    transcurrido = (Date.now() - t0) / 1000;
+    try{ await SP.pausar(); }catch(e){}
+    girar(false); say('En pausa');
+  } else audio.pause();
 }
+
+/* En modo fragmento, el recorte lo vigila el propio audio */
+audio.addEventListener('timeupdate', () => {
+  const L = limite();
+  if (L && !audio.paused && audio.currentTime >= L){
+    audio.pause();
+    say('Fin del extracto');
+  }
+});
 
 audio.addEventListener('play',  () => { girar(true);  say('Sonando'); });
 audio.addEventListener('pause', () => { girar(false); say('En pausa'); });
@@ -266,7 +341,7 @@ function ver(cual){
 
 let confirmando = false;
 function abrirCarta(c){
-  carta = c; iniciado = false; spotifyFallo = false; confirmando = false;
+  carta = c; iniciado = false; spotifyFallo = false; confirmando = false; transcurrido = 0;
   audio.pause(); audio.removeAttribute('src');
   $('#resp').classList.add('hide');
   $('#bResp').classList.remove('hide'); $('#bResp').textContent = 'Ver respuesta';
@@ -420,6 +495,8 @@ $('#bResp').onclick = e => {
   e.target.classList.add('hide');
 };
 $('#disp').onchange  = e => localStorage.setItem('hitster_disp', e.target.value);
+$('#dur').onchange   = e => { localStorage.setItem('hitster_dur', e.target.value); if (modo) marcarModo(modo); };
+$('#ini').onchange   = e => localStorage.setItem('hitster_ini', e.target.value);
 $('#bDisp').onclick  = cargarDispositivos;
 $('#bSalir').onclick = () => { SP.salir(); pintarSpotify(); };
 $('#bSp').onclick    = () => {
@@ -429,6 +506,26 @@ $('#bSp').onclick    = () => {
   SP.entrar(id, location.hash);
 };
 document.addEventListener('visibilitychange', () => { if (document.hidden) cerrarCamara(); });
+
+/* ══════════════════ INSTALAR COMO APP ══════════════════ */
+let promesaInstalar = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  promesaInstalar = e;
+  $('#bInstalar').classList.remove('hide');
+});
+$('#bInstalar').onclick = async () => {
+  if (!promesaInstalar) return;
+  promesaInstalar.prompt();
+  await promesaInstalar.userChoice;
+  promesaInstalar = null;
+  $('#bInstalar').classList.add('hide');
+};
+window.addEventListener('appinstalled', () => $('#bInstalar').classList.add('hide'));
+
+if ('serviceWorker' in navigator)
+  window.addEventListener('load', () =>
+    navigator.serviceWorker.register('sw.js').catch(e => console.warn('sw:', e)));
 
 /* ══════════════════ ARRANQUE ══════════════════ */
 (async function(){
@@ -448,6 +545,9 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) cerra
   $('#hintSp').innerHTML = `${conSp} de ${n} cartas tienen canción completa en Spotify.<br><br>` +
     'La <b>Redirect URI</b> a registrar en el dashboard debe ser exactamente:<br>' +
     '<code>' + SP.redirectUri() + '</code>';
+
+  $('#dur').value = localStorage.getItem('hitster_dur') || '0';
+  $('#ini').value = localStorage.getItem('hitster_ini') || '0';
 
   const nativo = 'BarcodeDetector' in window;
   $('#hintCam').innerHTML = hayCamara()

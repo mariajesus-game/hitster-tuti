@@ -121,13 +121,22 @@ const SP = (() => {
   const dispositivos = () => api('/me/player/devices').then(d => (d && d.devices) || []);
   const estado       = () => api('/me/player');
 
-  const tocar = (trackId, deviceId) => api(
+  /** posMs: desde qué milisegundo arrancar (para no partir siempre por la intro) */
+  const tocar = (trackId, deviceId, posMs) => api(
     '/me/player/play' + (deviceId ? '?device_id=' + deviceId : ''),
-    { method: 'PUT', body: JSON.stringify({ uris: ['spotify:track:' + trackId] }) }
+    { method: 'PUT', body: JSON.stringify({
+        uris: ['spotify:track:' + trackId],
+        position_ms: Math.max(0, Math.round(posMs || 0)) }) }
   );
+
+  /** Duración de una pista en segundos (para calcular dónde empezar). */
+  const duracion = async trackId => {
+    try{ const t = await api('/tracks/' + trackId); return t ? t.duration_ms / 1000 : null; }
+    catch(e){ return null; }
+  };
   const pausar   = () => api('/me/player/pause', { method: 'PUT' });
   const reanudar = () => api('/me/player/play',  { method: 'PUT' });
 
   return { entrar, capturarRetorno, activa, salir, api, token,
-           dispositivos, estado, tocar, pausar, reanudar, redirectUri };
+           dispositivos, estado, tocar, pausar, reanudar, duracion, redirectUri };
 })();
