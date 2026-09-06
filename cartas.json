@@ -3,52 +3,147 @@
   "clientId": "PEGA_AQUI_TU_CLIENT_ID",
   "pais": "CL"
  },
- "nota": "Mazo simulado. Los años son estimaciones sin verificar.",
+ "generado": "2026-09-06",
  "cartas": [
   {
-   "id": "1f5pg",
-   "ar": "Adele",
-   "ti": "Rolling in the Deep",
-   "y": 2010,
+   "id": "jweab",
+   "ar": "Violeta Parra",
+   "ti": "Gracias a la Vida",
+   "y": 1966,
    "sp": null,
    "it": null,
-   "q": "Adele Rolling in the Deep"
+   "du": null,
+   "q": "Violeta Parra Gracias a la Vida"
   },
   {
-   "id": "w8frp",
-   "ar": "Backstreet Boys",
-   "ti": "I Want It That Way",
-   "y": 1999,
+   "id": "6ylv7",
+   "ar": "The Mamas & The Papas",
+   "ti": "California Dreamin'",
+   "y": 1965,
    "sp": null,
    "it": null,
-   "q": "Backstreet Boys I Want It That Way"
+   "du": null,
+   "q": "The Mamas & The Papas California Dreamin'"
   },
   {
-   "id": "ik8sf",
-   "ar": "Europe",
-   "ti": "The Final Countdown",
+   "id": "s4jlo",
+   "ar": "Elton John",
+   "ti": "Amoreena",
+   "y": 1970,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Elton John Amoreena"
+  },
+  {
+   "id": "avj7w",
+   "ar": "Stevie Wonder",
+   "ti": "Superstition",
+   "y": 1972,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Stevie Wonder Superstition"
+  },
+  {
+   "id": "lozdr",
+   "ar": "Los Jaivas",
+   "ti": "Todos Juntos",
+   "y": 1972,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Jaivas Todos Juntos"
+  },
+  {
+   "id": "1vdmf",
+   "ar": "ABBA",
+   "ti": "Dancing Queen",
+   "y": 1976,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "ABBA Dancing Queen"
+  },
+  {
+   "id": "1bwce",
+   "ar": "Soda Stereo",
+   "ti": "Trátame Suavemente",
+   "y": 1985,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Soda Stereo Trátame Suavemente"
+  },
+  {
+   "id": "tmtom",
+   "ar": "a-ha",
+   "ti": "Take On Me",
+   "y": 1985,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "a-ha Take On Me"
+  },
+  {
+   "id": "1ityu",
+   "ar": "Los Prisioneros",
+   "ti": "El Baile de los que Sobran",
    "y": 1986,
    "sp": null,
    "it": null,
-   "q": "Europe The Final Countdown"
+   "du": null,
+   "q": "Los Prisioneros El Baile de los que Sobran"
   },
   {
-   "id": "177de",
-   "ar": "Los del Río",
-   "ti": "Macarena",
+   "id": "1cqs4",
+   "ar": "Los Prisioneros",
+   "ti": "¿Por Qué No Se Van?",
+   "y": 1984,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Prisioneros ¿Por Qué No Se Van?"
+  },
+  {
+   "id": "ybfki",
+   "ar": "Guns N' Roses",
+   "ti": "Sweet Child O' Mine",
+   "y": 1987,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Guns N' Roses Sweet Child O' Mine"
+  },
+  {
+   "id": "189hu",
+   "ar": "Soda Stereo",
+   "ti": "De Música Ligera",
+   "y": 1990,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Soda Stereo De Música Ligera"
+  },
+  {
+   "id": "dhn0w",
+   "ar": "Nirvana",
+   "ti": "Smells Like Teen Spirit",
+   "y": 1991,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Nirvana Smells Like Teen Spirit"
+  },
+  {
+   "id": "g4pf4",
+   "ar": "Los Fabulosos Cadillacs",
+   "ti": "Matador",
    "y": 1993,
    "sp": null,
    "it": null,
-   "q": "Los del Río Macarena"
-  },
-  {
-   "id": "ydbwj",
-   "ar": "Mark Ronson feat. Bruno Mars",
-   "ti": "Uptown Funk",
-   "y": 2014,
-   "sp": null,
-   "it": null,
-   "q": "Mark Ronson feat. Bruno Mars Uptown Funk"
+   "du": null,
+   "q": "Los Fabulosos Cadillacs Matador"
   },
   {
    "id": "l84f1",
@@ -57,6 +152,7 @@
    "y": 1995,
    "sp": null,
    "it": null,
+   "du": null,
    "q": "Oasis Wonderwall"
   },
   {
@@ -66,16 +162,18 @@
    "y": 1999,
    "sp": null,
    "it": null,
+   "du": null,
    "q": "Ricky Martin Livin' la Vida Loca"
   },
   {
-   "id": "189hu",
-   "ar": "Soda Stereo",
-   "ti": "De música ligera",
-   "y": 1990,
+   "id": "xgd8b",
+   "ar": "Manu Chao",
+   "ti": "Me Gustas Tú",
+   "y": 2001,
    "sp": null,
    "it": null,
-   "q": "Soda Stereo De música ligera"
+   "du": null,
+   "q": "Manu Chao Me Gustas Tú"
   },
   {
    "id": "42bdo",
@@ -84,421 +182,8 @@
    "y": 2003,
    "sp": null,
    "it": null,
+   "du": null,
    "q": "The White Stripes Seven Nation Army"
-  },
-  {
-   "id": "14jcf",
-   "ar": "Bon Jovi",
-   "ti": "Livin' on a Prayer",
-   "y": 1986,
-   "sp": null,
-   "it": null,
-   "q": "Bon Jovi Livin' on a Prayer"
-  },
-  {
-   "id": "b1koe",
-   "ar": "Coldplay",
-   "ti": "Viva la Vida",
-   "y": 2008,
-   "sp": null,
-   "it": null,
-   "q": "Coldplay Viva la Vida"
-  },
-  {
-   "id": "1hynx",
-   "ar": "Earth, Wind & Fire",
-   "ti": "September",
-   "y": 1978,
-   "sp": null,
-   "it": null,
-   "q": "Earth, Wind & Fire September"
-  },
-  {
-   "id": "1fdi2",
-   "ar": "Enanitos Verdes",
-   "ti": "Lamento boliviano",
-   "y": 1994,
-   "sp": null,
-   "it": null,
-   "q": "Enanitos Verdes Lamento boliviano"
-  },
-  {
-   "id": "1ph2f",
-   "ar": "John Lennon",
-   "ti": "Imagine",
-   "y": 1971,
-   "sp": null,
-   "it": null,
-   "q": "John Lennon Imagine"
-  },
-  {
-   "id": "41exc",
-   "ar": "Journey",
-   "ti": "Don't Stop Believin'",
-   "y": 1981,
-   "sp": null,
-   "it": null,
-   "q": "Journey Don't Stop Believin'"
-  },
-  {
-   "id": "wcxms",
-   "ar": "Lady Gaga",
-   "ti": "Bad Romance",
-   "y": 2009,
-   "sp": null,
-   "it": null,
-   "q": "Lady Gaga Bad Romance"
-  },
-  {
-   "id": "ho9vx",
-   "ar": "Linkin Park",
-   "ti": "In the End",
-   "y": 2000,
-   "sp": null,
-   "it": null,
-   "q": "Linkin Park In the End"
-  },
-  {
-   "id": "xgd8b",
-   "ar": "Manu Chao",
-   "ti": "Me gustas tú",
-   "y": 2001,
-   "sp": null,
-   "it": null,
-   "q": "Manu Chao Me gustas tú"
-  },
-  {
-   "id": "dhn0w",
-   "ar": "Nirvana",
-   "ti": "Smells Like Teen Spirit",
-   "y": 1991,
-   "sp": null,
-   "it": null,
-   "q": "Nirvana Smells Like Teen Spirit"
-  },
-  {
-   "id": "7mgcl",
-   "ar": "Rick Astley",
-   "ti": "Never Gonna Give You Up",
-   "y": 1987,
-   "sp": null,
-   "it": null,
-   "q": "Rick Astley Never Gonna Give You Up"
-  },
-  {
-   "id": "1l726",
-   "ar": "The Beatles",
-   "ti": "Hey Jude",
-   "y": 1968,
-   "sp": null,
-   "it": null,
-   "q": "The Beatles Hey Jude"
-  },
-  {
-   "id": "ye5s7",
-   "ar": "The Black Eyed Peas",
-   "ti": "I Gotta Feeling",
-   "y": 2009,
-   "sp": null,
-   "it": null,
-   "q": "The Black Eyed Peas I Gotta Feeling"
-  },
-  {
-   "id": "5gp0d",
-   "ar": "The Weeknd",
-   "ti": "Blinding Lights",
-   "y": 2019,
-   "sp": null,
-   "it": null,
-   "q": "The Weeknd Blinding Lights"
-  },
-  {
-   "id": "zxs72",
-   "ar": "Whitney Houston",
-   "ti": "I Will Always Love You",
-   "y": 1992,
-   "sp": null,
-   "it": null,
-   "q": "Whitney Houston I Will Always Love You"
-  },
-  {
-   "id": "1tt2y",
-   "ar": "Coolio",
-   "ti": "Gangsta's Paradise",
-   "y": 1995,
-   "sp": null,
-   "it": null,
-   "q": "Coolio Gangsta's Paradise"
-  },
-  {
-   "id": "1vr0q",
-   "ar": "Creedence Clearwater Revival",
-   "ti": "Have You Ever Seen the Rain",
-   "y": 1970,
-   "sp": null,
-   "it": null,
-   "q": "Creedence Clearwater Revival Have You Ever Seen the Rain"
-  },
-  {
-   "id": "8f632",
-   "ar": "Daft Punk feat. Pharrell Williams & Nile Rodgers",
-   "ti": "Get Lucky",
-   "y": 2013,
-   "sp": null,
-   "it": null,
-   "q": "Daft Punk feat. Pharrell Williams & Nile Rodgers Get Lucky"
-  },
-  {
-   "id": "1tcx3",
-   "ar": "Luis Fonsi",
-   "ti": "Despacito",
-   "y": 2017,
-   "sp": null,
-   "it": null,
-   "q": "Luis Fonsi Despacito"
-  },
-  {
-   "id": "7pvgn",
-   "ar": "Metallica",
-   "ti": "Nothing Else Matters",
-   "y": 1991,
-   "sp": null,
-   "it": null,
-   "q": "Metallica Nothing Else Matters"
-  },
-  {
-   "id": "b8kfi",
-   "ar": "PSY",
-   "ti": "Gangnam Style",
-   "y": 2012,
-   "sp": null,
-   "it": null,
-   "q": "PSY Gangnam Style"
-  },
-  {
-   "id": "1poy4",
-   "ar": "Pharrell Williams",
-   "ti": "Happy",
-   "y": 2013,
-   "sp": null,
-   "it": null,
-   "q": "Pharrell Williams Happy"
-  },
-  {
-   "id": "fckgr",
-   "ar": "Queen",
-   "ti": "Bohemian Rhapsody",
-   "y": 1975,
-   "sp": null,
-   "it": null,
-   "q": "Queen Bohemian Rhapsody"
-  },
-  {
-   "id": "1wogd",
-   "ar": "Queen",
-   "ti": "We Will Rock You",
-   "y": 1977,
-   "sp": null,
-   "it": null,
-   "q": "Queen We Will Rock You"
-  },
-  {
-   "id": "1619g",
-   "ar": "Aqua",
-   "ti": "Barbie Girl",
-   "y": 1997,
-   "sp": null,
-   "it": null,
-   "q": "Aqua Barbie Girl"
-  },
-  {
-   "id": "tjh6y",
-   "ar": "Bee Gees",
-   "ti": "Stayin' Alive",
-   "y": 1977,
-   "sp": null,
-   "it": null,
-   "q": "Bee Gees Stayin' Alive"
-  },
-  {
-   "id": "zynvi",
-   "ar": "Céline Dion",
-   "ti": "My Heart Will Go On",
-   "y": 1997,
-   "sp": null,
-   "it": null,
-   "q": "Céline Dion My Heart Will Go On"
-  },
-  {
-   "id": "1ellj",
-   "ar": "Eagles",
-   "ti": "Hotel California",
-   "y": 1976,
-   "sp": null,
-   "it": null,
-   "q": "Eagles Hotel California"
-  },
-  {
-   "id": "1u2e8",
-   "ar": "Eminem",
-   "ti": "Lose Yourself",
-   "y": 2002,
-   "sp": null,
-   "it": null,
-   "q": "Eminem Lose Yourself"
-  },
-  {
-   "id": "aud2l",
-   "ar": "Gloria Gaynor",
-   "ti": "I Will Survive",
-   "y": 1978,
-   "sp": null,
-   "it": null,
-   "q": "Gloria Gaynor I Will Survive"
-  },
-  {
-   "id": "jzvt8",
-   "ar": "Michael Jackson",
-   "ti": "Billie Jean",
-   "y": 1982,
-   "sp": null,
-   "it": null,
-   "q": "Michael Jackson Billie Jean"
-  },
-  {
-   "id": "et5mg",
-   "ar": "Shakira feat. Wyclef Jean",
-   "ti": "Hips Don't Lie",
-   "y": 2006,
-   "sp": null,
-   "it": null,
-   "q": "Shakira feat. Wyclef Jean Hips Don't Lie"
-  },
-  {
-   "id": "1b79x",
-   "ar": "The Beatles",
-   "ti": "Let It Be",
-   "y": 1970,
-   "sp": null,
-   "it": null,
-   "q": "The Beatles Let It Be"
-  },
-  {
-   "id": "7wxta",
-   "ar": "Whitney Houston",
-   "ti": "I Wanna Dance with Somebody (Who Loves Me)",
-   "y": 1987,
-   "sp": null,
-   "it": null,
-   "q": "Whitney Houston I Wanna Dance with Somebody (Who Loves Me)"
-  },
-  {
-   "id": "1cm7e",
-   "ar": "50 Cent",
-   "ti": "In Da Club",
-   "y": 2003,
-   "sp": null,
-   "it": null,
-   "q": "50 Cent In Da Club"
-  },
-  {
-   "id": "1vdmf",
-   "ar": "ABBA",
-   "ti": "Dancing Queen",
-   "y": 1976,
-   "sp": null,
-   "it": null,
-   "q": "ABBA Dancing Queen"
-  },
-  {
-   "id": "9ounu",
-   "ar": "ABBA",
-   "ti": "Mamma Mia",
-   "y": 1975,
-   "sp": null,
-   "it": null,
-   "q": "ABBA Mamma Mia"
-  },
-  {
-   "id": "1kpi3",
-   "ar": "AC/DC",
-   "ti": "Back in Black",
-   "y": 1980,
-   "sp": null,
-   "it": null,
-   "q": "AC/DC Back in Black"
-  },
-  {
-   "id": "1e8d8",
-   "ar": "Amy Winehouse",
-   "ti": "Rehab",
-   "y": 2006,
-   "sp": null,
-   "it": null,
-   "q": "Amy Winehouse Rehab"
-  },
-  {
-   "id": "1lzfq",
-   "ar": "Bad Bunny, Jhay Cortez",
-   "ti": "Dákiti",
-   "y": 2020,
-   "sp": null,
-   "it": null,
-   "q": "Bad Bunny, Jhay Cortez Dákiti"
-  },
-  {
-   "id": "1t5x3",
-   "ar": "Bonnie Tyler",
-   "ti": "Total Eclipse of the Heart",
-   "y": 1983,
-   "sp": null,
-   "it": null,
-   "q": "Bonnie Tyler Total Eclipse of the Heart"
-  },
-  {
-   "id": "ihfa8",
-   "ar": "Britney Spears",
-   "ti": "...Baby One More Time",
-   "y": 1998,
-   "sp": null,
-   "it": null,
-   "q": "Britney Spears ...Baby One More Time"
-  },
-  {
-   "id": "mlwrh",
-   "ar": "Celia Cruz",
-   "ti": "La vida es un carnaval",
-   "y": 1998,
-   "sp": null,
-   "it": null,
-   "q": "Celia Cruz La vida es un carnaval"
-  },
-  {
-   "id": "11f8l",
-   "ar": "Cher",
-   "ti": "Believe",
-   "y": 1998,
-   "sp": null,
-   "it": null,
-   "q": "Cher Believe"
-  },
-  {
-   "id": "clnu3",
-   "ar": "Chumbawamba",
-   "ti": "Tubthumping",
-   "y": 1997,
-   "sp": null,
-   "it": null,
-   "q": "Chumbawamba Tubthumping"
-  },
-  {
-   "id": "uk11u",
-   "ar": "Cyndi Lauper",
-   "ti": "Girls Just Want to Have Fun",
-   "y": 1983,
-   "sp": null,
-   "it": null,
-   "q": "Cyndi Lauper Girls Just Want to Have Fun"
   },
   {
    "id": "1x6jg",
@@ -507,826 +192,8 @@
    "y": 2004,
    "sp": null,
    "it": null,
+   "du": null,
    "q": "Daddy Yankee Gasolina"
-  },
-  {
-   "id": "elfem",
-   "ar": "Daft Punk",
-   "ti": "One More Time",
-   "y": 2000,
-   "sp": null,
-   "it": null,
-   "q": "Daft Punk One More Time"
-  },
-  {
-   "id": "15rym",
-   "ar": "Donna Summer",
-   "ti": "Hot Stuff",
-   "y": 1979,
-   "sp": null,
-   "it": null,
-   "q": "Donna Summer Hot Stuff"
-  },
-  {
-   "id": "b4igb",
-   "ar": "Dua Lipa",
-   "ti": "Don't Start Now",
-   "y": 2019,
-   "sp": null,
-   "it": null,
-   "q": "Dua Lipa Don't Start Now"
-  },
-  {
-   "id": "1rs2r",
-   "ar": "Ed Sheeran",
-   "ti": "Shape of You",
-   "y": 2017,
-   "sp": null,
-   "it": null,
-   "q": "Ed Sheeran Shape of You"
-  },
-  {
-   "id": "eukpx",
-   "ar": "Eurythmics",
-   "ti": "Sweet Dreams (Are Made of This)",
-   "y": 1983,
-   "sp": null,
-   "it": null,
-   "q": "Eurythmics Sweet Dreams (Are Made of This)"
-  },
-  {
-   "id": "70cf3",
-   "ar": "Green Day",
-   "ti": "Basket Case",
-   "y": 1994,
-   "sp": null,
-   "it": null,
-   "q": "Green Day Basket Case"
-  },
-  {
-   "id": "ybfki",
-   "ar": "Guns N' Roses",
-   "ti": "Sweet Child O' Mine",
-   "y": 1987,
-   "sp": null,
-   "it": null,
-   "q": "Guns N' Roses Sweet Child O' Mine"
-  },
-  {
-   "id": "a9naf",
-   "ar": "Gustavo Cerati",
-   "ti": "Crimen",
-   "y": 2006,
-   "sp": null,
-   "it": null,
-   "q": "Gustavo Cerati Crimen"
-  },
-  {
-   "id": "jyd8s",
-   "ar": "Harry Styles",
-   "ti": "As It Was",
-   "y": 2022,
-   "sp": null,
-   "it": null,
-   "q": "Harry Styles As It Was"
-  },
-  {
-   "id": "cd82w",
-   "ar": "Juan Gabriel",
-   "ti": "Querida",
-   "y": 1984,
-   "sp": null,
-   "it": null,
-   "q": "Juan Gabriel Querida"
-  },
-  {
-   "id": "19893",
-   "ar": "Kylie Minogue",
-   "ti": "Can't Get You Out of My Head",
-   "y": 2001,
-   "sp": null,
-   "it": null,
-   "q": "Kylie Minogue Can't Get You Out of My Head"
-  },
-  {
-   "id": "lozdr",
-   "ar": "Los Jaivas",
-   "ti": "Todos juntos",
-   "y": 1972,
-   "sp": null,
-   "it": null,
-   "q": "Los Jaivas Todos juntos"
-  },
-  {
-   "id": "1ityu",
-   "ar": "Los Prisioneros",
-   "ti": "El baile de los que sobran",
-   "y": 1986,
-   "sp": null,
-   "it": null,
-   "q": "Los Prisioneros El baile de los que sobran"
-  },
-  {
-   "id": "vs7xg",
-   "ar": "Los Prisioneros",
-   "ti": "Tren al sur",
-   "y": 1990,
-   "sp": null,
-   "it": null,
-   "q": "Los Prisioneros Tren al sur"
-  },
-  {
-   "id": "18ke8",
-   "ar": "Los Tres",
-   "ti": "La espada & la pared",
-   "y": 1995,
-   "sp": null,
-   "it": null,
-   "q": "Los Tres La espada & la pared"
-  },
-  {
-   "id": "173ga",
-   "ar": "Madonna",
-   "ti": "Like a Prayer",
-   "y": 1989,
-   "sp": null,
-   "it": null,
-   "q": "Madonna Like a Prayer"
-  },
-  {
-   "id": "kp7ks",
-   "ar": "Maná",
-   "ti": "Clavado en un bar",
-   "y": 1997,
-   "sp": null,
-   "it": null,
-   "q": "Maná Clavado en un bar"
-  },
-  {
-   "id": "4if9j",
-   "ar": "Michael Jackson",
-   "ti": "Thriller",
-   "y": 1982,
-   "sp": null,
-   "it": null,
-   "q": "Michael Jackson Thriller"
-  },
-  {
-   "id": "v9gae",
-   "ar": "Miley Cyrus",
-   "ti": "Flowers",
-   "y": 2023,
-   "sp": null,
-   "it": null,
-   "q": "Miley Cyrus Flowers"
-  },
-  {
-   "id": "q4ejb",
-   "ar": "No Doubt",
-   "ti": "Don't Speak",
-   "y": 1996,
-   "sp": null,
-   "it": null,
-   "q": "No Doubt Don't Speak"
-  },
-  {
-   "id": "b6zxd",
-   "ar": "OutKast",
-   "ti": "Hey Ya!",
-   "y": 2003,
-   "sp": null,
-   "it": null,
-   "q": "OutKast Hey Ya!"
-  },
-  {
-   "id": "wy3s7",
-   "ar": "Selena",
-   "ti": "Como la flor",
-   "y": 1992,
-   "sp": null,
-   "it": null,
-   "q": "Selena Como la flor"
-  },
-  {
-   "id": "d0vyq",
-   "ar": "Sia",
-   "ti": "Chandelier",
-   "y": 2014,
-   "sp": null,
-   "it": null,
-   "q": "Sia Chandelier"
-  },
-  {
-   "id": "s6yu2",
-   "ar": "Spice Girls",
-   "ti": "Wannabe",
-   "y": 1996,
-   "sp": null,
-   "it": null,
-   "q": "Spice Girls Wannabe"
-  },
-  {
-   "id": "h6n68",
-   "ar": "Survivor",
-   "ti": "Eye of the Tiger",
-   "y": 1982,
-   "sp": null,
-   "it": null,
-   "q": "Survivor Eye of the Tiger"
-  },
-  {
-   "id": "gtbam",
-   "ar": "Taylor Swift",
-   "ti": "Shake It Off",
-   "y": 2014,
-   "sp": null,
-   "it": null,
-   "q": "Taylor Swift Shake It Off"
-  },
-  {
-   "id": "5e4kt",
-   "ar": "The Cranberries",
-   "ti": "Zombie",
-   "y": 1994,
-   "sp": null,
-   "it": null,
-   "q": "The Cranberries Zombie"
-  },
-  {
-   "id": "x9li9",
-   "ar": "The Police",
-   "ti": "Every Breath You Take",
-   "y": 1983,
-   "sp": null,
-   "it": null,
-   "q": "The Police Every Breath You Take"
-  },
-  {
-   "id": "b3p75",
-   "ar": "Toto",
-   "ti": "Africa",
-   "y": 1982,
-   "sp": null,
-   "it": null,
-   "q": "Toto Africa"
-  },
-  {
-   "id": "7zyto",
-   "ar": "U2",
-   "ti": "With or Without You",
-   "y": 1987,
-   "sp": null,
-   "it": null,
-   "q": "U2 With or Without You"
-  },
-  {
-   "id": "16b4d",
-   "ar": "Vanilla Ice",
-   "ti": "Ice Ice Baby",
-   "y": 1990,
-   "sp": null,
-   "it": null,
-   "q": "Vanilla Ice Ice Ice Baby"
-  },
-  {
-   "id": "1edfz",
-   "ar": "Vicente Fernández",
-   "ti": "Volver, volver",
-   "y": 1972,
-   "sp": null,
-   "it": null,
-   "q": "Vicente Fernández Volver, volver"
-  },
-  {
-   "id": "bs0ob",
-   "ar": "Village People",
-   "ti": "Y.M.C.A.",
-   "y": 1978,
-   "sp": null,
-   "it": null,
-   "q": "Village People Y.M.C.A."
-  },
-  {
-   "id": "tmtom",
-   "ar": "a-ha",
-   "ti": "Take On Me",
-   "y": 1985,
-   "sp": null,
-   "it": null,
-   "q": "a-ha Take On Me"
-  },
-  {
-   "id": "9m24o",
-   "ar": "Avicii",
-   "ti": "Wake Me Up",
-   "y": 2013,
-   "sp": null,
-   "it": null,
-   "q": "Avicii Wake Me Up"
-  },
-  {
-   "id": "1aemc",
-   "ar": "Café Tacvba",
-   "ti": "Eres",
-   "y": 2003,
-   "sp": null,
-   "it": null,
-   "q": "Café Tacvba Eres"
-  },
-  {
-   "id": "zi9eu",
-   "ar": "Chayanne",
-   "ti": "Torero",
-   "y": 2000,
-   "sp": null,
-   "it": null,
-   "q": "Chayanne Torero"
-  },
-  {
-   "id": "sdymf",
-   "ar": "Coldplay",
-   "ti": "Yellow",
-   "y": 2000,
-   "sp": null,
-   "it": null,
-   "q": "Coldplay Yellow"
-  },
-  {
-   "id": "l13fv",
-   "ar": "Deep Purple",
-   "ti": "Smoke on the Water",
-   "y": 1972,
-   "sp": null,
-   "it": null,
-   "q": "Deep Purple Smoke on the Water"
-  },
-  {
-   "id": "1mrk3",
-   "ar": "Don Omar",
-   "ti": "Danza Kuduro",
-   "y": 2010,
-   "sp": null,
-   "it": null,
-   "q": "Don Omar Danza Kuduro"
-  },
-  {
-   "id": "16aw0",
-   "ar": "Elvis Crespo",
-   "ti": "Suavemente",
-   "y": 1998,
-   "sp": null,
-   "it": null,
-   "q": "Elvis Crespo Suavemente"
-  },
-  {
-   "id": "kj3zc",
-   "ar": "Evanescence",
-   "ti": "Bring Me to Life",
-   "y": 2003,
-   "sp": null,
-   "it": null,
-   "q": "Evanescence Bring Me to Life"
-  },
-  {
-   "id": "15xkg",
-   "ar": "Gloria Estefan",
-   "ti": "Conga",
-   "y": 1985,
-   "sp": null,
-   "it": null,
-   "q": "Gloria Estefan Conga"
-  },
-  {
-   "id": "r3cje",
-   "ar": "Jarabe de Palo",
-   "ti": "La flaca",
-   "y": 1996,
-   "sp": null,
-   "it": null,
-   "q": "Jarabe de Palo La flaca"
-  },
-  {
-   "id": "18d6a",
-   "ar": "Juan Luis Guerra",
-   "ti": "Burbujas de amor",
-   "y": 1990,
-   "sp": null,
-   "it": null,
-   "q": "Juan Luis Guerra Burbujas de amor"
-  },
-  {
-   "id": "keukm",
-   "ar": "Led Zeppelin",
-   "ti": "Stairway to Heaven",
-   "y": 1971,
-   "sp": null,
-   "it": null,
-   "q": "Led Zeppelin Stairway to Heaven"
-  },
-  {
-   "id": "1fdtc",
-   "ar": "Los Ángeles Azules feat. Ximena Sariñana",
-   "ti": "Nunca es suficiente",
-   "y": 2018,
-   "sp": null,
-   "it": null,
-   "q": "Los Ángeles Azules feat. Ximena Sariñana Nunca es suficiente"
-  },
-  {
-   "id": "ihfhq",
-   "ar": "Luis Miguel",
-   "ti": "La incondicional",
-   "y": 1989,
-   "sp": null,
-   "it": null,
-   "q": "Luis Miguel La incondicional"
-  },
-  {
-   "id": "104ud",
-   "ar": "Madonna",
-   "ti": "Material Girl",
-   "y": 1984,
-   "sp": null,
-   "it": null,
-   "q": "Madonna Material Girl"
-  },
-  {
-   "id": "17c7m",
-   "ar": "Modern Talking",
-   "ti": "Brother Louie",
-   "y": 1986,
-   "sp": null,
-   "it": null,
-   "q": "Modern Talking Brother Louie"
-  },
-  {
-   "id": "1xkxi",
-   "ar": "Radiohead",
-   "ti": "Creep",
-   "y": 1992,
-   "sp": null,
-   "it": null,
-   "q": "Radiohead Creep"
-  },
-  {
-   "id": "16fbz",
-   "ar": "Red Hot Chili Peppers",
-   "ti": "Under the Bridge",
-   "y": 1991,
-   "sp": null,
-   "it": null,
-   "q": "Red Hot Chili Peppers Under the Bridge"
-  },
-  {
-   "id": "1ehiz",
-   "ar": "Rihanna",
-   "ti": "Umbrella",
-   "y": 2007,
-   "sp": null,
-   "it": null,
-   "q": "Rihanna Umbrella"
-  },
-  {
-   "id": "kisu7",
-   "ar": "Roxette",
-   "ti": "It Must Have Been Love",
-   "y": 1990,
-   "sp": null,
-   "it": null,
-   "q": "Roxette It Must Have Been Love"
-  },
-  {
-   "id": "zwjxa",
-   "ar": "Shakira",
-   "ti": "Ojos así",
-   "y": 1998,
-   "sp": null,
-   "it": null,
-   "q": "Shakira Ojos así"
-  },
-  {
-   "id": "xndpr",
-   "ar": "Shakira",
-   "ti": "Whenever, Wherever",
-   "y": 2001,
-   "sp": null,
-   "it": null,
-   "q": "Shakira Whenever, Wherever"
-  },
-  {
-   "id": "1uzsv",
-   "ar": "Simon & Garfunkel",
-   "ti": "The Sound of Silence",
-   "y": 1965,
-   "sp": null,
-   "it": null,
-   "q": "Simon & Garfunkel The Sound of Silence"
-  },
-  {
-   "id": "15d7g",
-   "ar": "Soda Stereo",
-   "ti": "Persiana americana",
-   "y": 1986,
-   "sp": null,
-   "it": null,
-   "q": "Soda Stereo Persiana americana"
-  },
-  {
-   "id": "1c49u",
-   "ar": "Tina Turner",
-   "ti": "What's Love Got to Do with It",
-   "y": 1984,
-   "sp": null,
-   "it": null,
-   "q": "Tina Turner What's Love Got to Do with It"
-  },
-  {
-   "id": "5q4oc",
-   "ar": "Wham!",
-   "ti": "Last Christmas",
-   "y": 1984,
-   "sp": null,
-   "it": null,
-   "q": "Wham! Last Christmas"
-  },
-  {
-   "id": "wcf9j",
-   "ar": "Adele",
-   "ti": "Someone Like You",
-   "y": 2011,
-   "sp": null,
-   "it": null,
-   "q": "Adele Someone Like You"
-  },
-  {
-   "id": "1qhan",
-   "ar": "Alejandro Sanz",
-   "ti": "Corazón partío",
-   "y": 1997,
-   "sp": null,
-   "it": null,
-   "q": "Alejandro Sanz Corazón partío"
-  },
-  {
-   "id": "1repo",
-   "ar": "Aventura",
-   "ti": "Obsesión",
-   "y": 2002,
-   "sp": null,
-   "it": null,
-   "q": "Aventura Obsesión"
-  },
-  {
-   "id": "egj9l",
-   "ar": "Beyoncé",
-   "ti": "Single Ladies (Put a Ring on It)",
-   "y": 2008,
-   "sp": null,
-   "it": null,
-   "q": "Beyoncé Single Ladies (Put a Ring on It)"
-  },
-  {
-   "id": "1cyqe",
-   "ar": "Blur",
-   "ti": "Song 2",
-   "y": 1997,
-   "sp": null,
-   "it": null,
-   "q": "Blur Song 2"
-  },
-  {
-   "id": "hinlm",
-   "ar": "Bruno Mars",
-   "ti": "Just the Way You Are",
-   "y": 2010,
-   "sp": null,
-   "it": null,
-   "q": "Bruno Mars Just the Way You Are"
-  },
-  {
-   "id": "im1gp",
-   "ar": "Carlos Vives",
-   "ti": "La gota fría",
-   "y": 1993,
-   "sp": null,
-   "it": null,
-   "q": "Carlos Vives La gota fría"
-  },
-  {
-   "id": "1jvhi",
-   "ar": "Depeche Mode",
-   "ti": "Enjoy the Silence",
-   "y": 1990,
-   "sp": null,
-   "it": null,
-   "q": "Depeche Mode Enjoy the Silence"
-  },
-  {
-   "id": "ye4yo",
-   "ar": "Eiffel 65",
-   "ti": "Blue (Da Ba Dee)",
-   "y": 1999,
-   "sp": null,
-   "it": null,
-   "q": "Eiffel 65 Blue (Da Ba Dee)"
-  },
-  {
-   "id": "12u3j",
-   "ar": "Elton John",
-   "ti": "Your Song",
-   "y": 1970,
-   "sp": null,
-   "it": null,
-   "q": "Elton John Your Song"
-  },
-  {
-   "id": "1b7t4",
-   "ar": "Fugees",
-   "ti": "Killing Me Softly With His Song",
-   "y": 1996,
-   "sp": null,
-   "it": null,
-   "q": "Fugees Killing Me Softly With His Song"
-  },
-  {
-   "id": "mlogt",
-   "ar": "Gnarls Barkley",
-   "ti": "Crazy",
-   "y": 2006,
-   "sp": null,
-   "it": null,
-   "q": "Gnarls Barkley Crazy"
-  },
-  {
-   "id": "41yu7",
-   "ar": "Gorillaz",
-   "ti": "Feel Good Inc.",
-   "y": 2005,
-   "sp": null,
-   "it": null,
-   "q": "Gorillaz Feel Good Inc."
-  },
-  {
-   "id": "i0gdm",
-   "ar": "Juanes",
-   "ti": "A Dios le pido",
-   "y": 2002,
-   "sp": null,
-   "it": null,
-   "q": "Juanes A Dios le pido"
-  },
-  {
-   "id": "18r0e",
-   "ar": "Karol G",
-   "ti": "Provenza",
-   "y": 2022,
-   "sp": null,
-   "it": null,
-   "q": "Karol G Provenza"
-  },
-  {
-   "id": "1jwmt",
-   "ar": "La Ley",
-   "ti": "El duelo",
-   "y": 2000,
-   "sp": null,
-   "it": null,
-   "q": "La Ley El duelo"
-  },
-  {
-   "id": "nvkol",
-   "ar": "Lil Nas X",
-   "ti": "Old Town Road",
-   "y": 2019,
-   "sp": null,
-   "it": null,
-   "q": "Lil Nas X Old Town Road"
-  },
-  {
-   "id": "bepyj",
-   "ar": "Los Bukis",
-   "ti": "Tu cárcel",
-   "y": 1984,
-   "sp": null,
-   "it": null,
-   "q": "Los Bukis Tu cárcel"
-  },
-  {
-   "id": "1z0y7",
-   "ar": "Los Bunkers",
-   "ti": "Llueve sobre la ciudad",
-   "y": 2005,
-   "sp": null,
-   "it": null,
-   "q": "Los Bunkers Llueve sobre la ciudad"
-  },
-  {
-   "id": "g4pf4",
-   "ar": "Los Fabulosos Cadillacs",
-   "ti": "Matador",
-   "y": 1993,
-   "sp": null,
-   "it": null,
-   "q": "Los Fabulosos Cadillacs Matador"
-  },
-  {
-   "id": "syykb",
-   "ar": "Los Prisioneros",
-   "ti": "La voz de los '80",
-   "y": 1984,
-   "sp": null,
-   "it": null,
-   "q": "Los Prisioneros La voz de los '80"
-  },
-  {
-   "id": "1qcv3",
-   "ar": "Manu Chao",
-   "ti": "Clandestino",
-   "y": 1998,
-   "sp": null,
-   "it": null,
-   "q": "Manu Chao Clandestino"
-  },
-  {
-   "id": "1gs0k",
-   "ar": "Maná",
-   "ti": "Rayando el sol",
-   "y": 1990,
-   "sp": null,
-   "it": null,
-   "q": "Maná Rayando el sol"
-  },
-  {
-   "id": "3925t",
-   "ar": "Marc Anthony",
-   "ti": "Vivir mi vida",
-   "y": 2013,
-   "sp": null,
-   "it": null,
-   "q": "Marc Anthony Vivir mi vida"
-  },
-  {
-   "id": "1n4ef",
-   "ar": "Michael Jackson",
-   "ti": "Beat It",
-   "y": 1982,
-   "sp": null,
-   "it": null,
-   "q": "Michael Jackson Beat It"
-  },
-  {
-   "id": "j58ct",
-   "ar": "Molotov",
-   "ti": "Gimme Tha Power",
-   "y": 1997,
-   "sp": null,
-   "it": null,
-   "q": "Molotov Gimme Tha Power"
-  },
-  {
-   "id": "16jng",
-   "ar": "Mon Laferte",
-   "ti": "Tu falta de querer",
-   "y": 2015,
-   "sp": null,
-   "it": null,
-   "q": "Mon Laferte Tu falta de querer"
-  },
-  {
-   "id": "myniq",
-   "ar": "Pink Floyd",
-   "ti": "Another Brick in the Wall",
-   "y": 1979,
-   "sp": null,
-   "it": null,
-   "q": "Pink Floyd Another Brick in the Wall"
-  },
-  {
-   "id": "1xhu9",
-   "ar": "Queen",
-   "ti": "Don't Stop Me Now",
-   "y": 1978,
-   "sp": null,
-   "it": null,
-   "q": "Queen Don't Stop Me Now"
-  },
-  {
-   "id": "1r0yw",
-   "ar": "Rage Against the Machine",
-   "ti": "Killing In The Name",
-   "y": 1992,
-   "sp": null,
-   "it": null,
-   "q": "Rage Against the Machine Killing In The Name"
-  },
-  {
-   "id": "wqihy",
-   "ar": "The Cure",
-   "ti": "Just Like Heaven",
-   "y": 1987,
-   "sp": null,
-   "it": null,
-   "q": "The Cure Just Like Heaven"
   },
   {
    "id": "l9t9i",
@@ -1335,43 +202,28 @@
    "y": 2003,
    "sp": null,
    "it": null,
+   "du": null,
    "q": "The Killers Mr. Brightside"
   },
   {
-   "id": "2j0g2",
-   "ar": "The Rolling Stones",
-   "ti": "(I Can't Get No) Satisfaction",
-   "y": 1965,
+   "id": "qnawq",
+   "ar": "Daddy Yankee & Jowell y Randy",
+   "ti": "Bailando Fue",
+   "y": 2008,
    "sp": null,
    "it": null,
-   "q": "The Rolling Stones (I Can't Get No) Satisfaction"
+   "du": null,
+   "q": "Daddy Yankee & Jowell y Randy Bailando Fue"
   },
   {
-   "id": "jweab",
-   "ar": "Violeta Parra",
-   "ti": "Gracias a la vida",
-   "y": 1966,
+   "id": "335mn",
+   "ar": "Kings of Leon",
+   "ti": "Use Somebody",
+   "y": 2008,
    "sp": null,
    "it": null,
-   "q": "Violeta Parra Gracias a la vida"
-  },
-  {
-   "id": "ostuu",
-   "ar": "Víctor Jara",
-   "ti": "El derecho de vivir en paz",
-   "y": 1971,
-   "sp": null,
-   "it": null,
-   "q": "Víctor Jara El derecho de vivir en paz"
-  },
-  {
-   "id": "1y3pe",
-   "ar": "Alanis Morissette",
-   "ti": "You Oughta Know",
-   "y": 1995,
-   "sp": null,
-   "it": null,
-   "q": "Alanis Morissette You Oughta Know"
+   "du": null,
+   "q": "Kings of Leon Use Somebody"
   },
   {
    "id": "voq0i",
@@ -1380,43 +232,1388 @@
    "y": 2009,
    "sp": null,
    "it": null,
+   "du": null,
    "q": "Ana Tijoux 1977"
   },
   {
-   "id": "z4mze",
-   "ar": "Aterciopelados",
-   "ti": "Florecita rockera",
+   "id": "1cd9y",
+   "ar": "Mac Miller",
+   "ti": "Kids",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mac Miller Kids"
+  },
+  {
+   "id": "1tnub",
+   "ar": "Capital Cities",
+   "ti": "Safe and Sound",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Capital Cities Safe and Sound"
+  },
+  {
+   "id": "1fyrg",
+   "ar": "Wisin & Yandel",
+   "ti": "Hipnotízame",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Wisin & Yandel Hipnotízame"
+  },
+  {
+   "id": "1os3y",
+   "ar": "Bastille",
+   "ti": "Pompeii",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bastille Pompeii"
+  },
+  {
+   "id": "17p8o",
+   "ar": "Ed Sheeran",
+   "ti": "Nina",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ed Sheeran Nina"
+  },
+  {
+   "id": "1rrvg",
+   "ar": "WALK THE MOON",
+   "ti": "Shut Up and Dance",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "WALK THE MOON Shut Up and Dance"
+  },
+  {
+   "id": "1ujs5",
+   "ar": "Years & Years",
+   "ti": "Shine",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Years & Years Shine"
+  },
+  {
+   "id": "16jng",
+   "ar": "Mon Laferte",
+   "ti": "Tu Falta de Querer",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mon Laferte Tu Falta de Querer"
+  },
+  {
+   "id": "ziytb",
+   "ar": "Post Malone feat. Quavo",
+   "ti": "Congratulations",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Post Malone feat. Quavo Congratulations"
+  },
+  {
+   "id": "1grhx",
+   "ar": "Rag'n'Bone Man",
+   "ti": "Human",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Rag'n'Bone Man Human"
+  },
+  {
+   "id": "1xwrw",
+   "ar": "Greta Van Fleet",
+   "ti": "Black Smoke Rising",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Greta Van Fleet Black Smoke Rising"
+  },
+  {
+   "id": "8mual",
+   "ar": "Moral Distraída",
+   "ti": "Quédate Acá",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Moral Distraída Quédate Acá"
+  },
+  {
+   "id": "1cpyw",
+   "ar": "Paulo Londra feat. Lenny Tavárez",
+   "ti": "Nena Maldición",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Paulo Londra feat. Lenny Tavárez Nena Maldición"
+  },
+  {
+   "id": "1inzz",
+   "ar": "LSD",
+   "ti": "Thunderclouds",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "LSD Thunderclouds"
+  },
+  {
+   "id": "1ut9c",
+   "ar": "Moral Distraída",
+   "ti": "Mango con Petazetas",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Moral Distraída Mango con Petazetas"
+  },
+  {
+   "id": "1lzfq",
+   "ar": "Bad Bunny & Jhay Cortez",
+   "ti": "Dákiti",
+   "y": 2020,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bad Bunny & Jhay Cortez Dákiti"
+  },
+  {
+   "id": "1iivt",
+   "ar": "Sam Smith",
+   "ti": "To Die For",
+   "y": 2020,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sam Smith To Die For"
+  },
+  {
+   "id": "1j51v",
+   "ar": "Pedro Capó",
+   "ti": "La Fiesta",
+   "y": 2022,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Pedro Capó La Fiesta"
+  },
+  {
+   "id": "d3ycc",
+   "ar": "C. Tangana & Kiko Veneno",
+   "ti": "Los Tontos",
+   "y": 2021,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "C. Tangana & Kiko Veneno Los Tontos"
+  },
+  {
+   "id": "1io2c",
+   "ar": "Wisin & Yandel",
+   "ti": "Reggaetón en lo Oscuro",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Wisin & Yandel Reggaetón en lo Oscuro"
+  },
+  {
+   "id": "lwb8v",
+   "ar": "Mora & JHAYCO",
+   "ti": "MEMORIAS",
+   "y": 2022,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mora & JHAYCO MEMORIAS"
+  },
+  {
+   "id": "1mpvi",
+   "ar": "Teddy Swims",
+   "ti": "Lose Control",
+   "y": 2023,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Teddy Swims Lose Control"
+  },
+  {
+   "id": "1gn96",
+   "ar": "Hozier",
+   "ti": "Nobody's Soldier",
+   "y": 2023,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Hozier Nobody's Soldier"
+  },
+  {
+   "id": "kndgu",
+   "ar": "Alleh & Yorghaki",
+   "ti": "Capaz (Merengueton)",
+   "y": 2024,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Alleh & Yorghaki Capaz (Merengueton)"
+  },
+  {
+   "id": "ky1j8",
+   "ar": "Beéle & Ovy On The Drums",
+   "ti": "Mi Refe",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Beéle & Ovy On The Drums Mi Refe"
+  },
+  {
+   "id": "1s4ln",
+   "ar": "sombr",
+   "ti": "12 to 12",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "sombr 12 to 12"
+  },
+  {
+   "id": "1ffcf",
+   "ar": "Alex Warren",
+   "ti": "FEVER DREAM",
+   "y": 2026,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Alex Warren FEVER DREAM"
+  },
+  {
+   "id": "15ifu",
+   "ar": "Julie Andrews",
+   "ti": "A Spoonful of Sugar",
+   "y": 1964,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Julie Andrews A Spoonful of Sugar"
+  },
+  {
+   "id": "1vk99",
+   "ar": "LP",
+   "ti": "Lost on You",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "LP Lost on You"
+  },
+  {
+   "id": "17zqc",
+   "ar": "LP",
+   "ti": "Tightrope",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "LP Tightrope"
+  },
+  {
+   "id": "g29x7",
+   "ar": "LP",
+   "ti": "One Last Time",
+   "y": 2021,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "LP One Last Time"
+  },
+  {
+   "id": "andoy",
+   "ar": "LP",
+   "ti": "Girls Go Wild",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "LP Girls Go Wild"
+  },
+  {
+   "id": "1kitf",
+   "ar": "LP",
+   "ti": "Muddy Waters",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "LP Muddy Waters"
+  },
+  {
+   "id": "5k1x0",
+   "ar": "LP",
+   "ti": "Recovery",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "LP Recovery"
+  },
+  {
+   "id": "1e6si",
+   "ar": "Linkin Park",
+   "ti": "Heavy Is the Crown",
+   "y": 2024,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Linkin Park Heavy Is the Crown"
+  },
+  {
+   "id": "154fy",
+   "ar": "Twenty One Pilots",
+   "ti": "The Judge",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Twenty One Pilots The Judge"
+  },
+  {
+   "id": "1pt3x",
+   "ar": "Calle 13",
+   "ti": "El Aguante",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Calle 13 El Aguante"
+  },
+  {
+   "id": "11x95",
+   "ar": "Twenty One Pilots",
+   "ti": "Heavy Dirty Soul",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Twenty One Pilots Heavy Dirty Soul"
+  },
+  {
+   "id": "1w6kt",
+   "ar": "Lady Gaga",
+   "ti": "Abracadabra",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Lady Gaga Abracadabra"
+  },
+  {
+   "id": "v84j2",
+   "ar": "Phil Collins",
+   "ti": "Son of Man",
+   "y": 1999,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Phil Collins Son of Man"
+  },
+  {
+   "id": "953c8",
+   "ar": "Phil Collins",
+   "ti": "On My Way",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Phil Collins On My Way"
+  },
+  {
+   "id": "1td74",
+   "ar": "Tina Turner",
+   "ti": "Great Spirits",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Tina Turner Great Spirits"
+  },
+  {
+   "id": "1j6zh",
+   "ar": "Robin Williams",
+   "ti": "Friend Like Me",
+   "y": 1992,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Robin Williams Friend Like Me"
+  },
+  {
+   "id": "1bcf7",
+   "ar": "Sam Smith",
+   "ti": "Palace",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sam Smith Palace"
+  },
+  {
+   "id": "kzz8k",
+   "ar": "The Script",
+   "ti": "The Man Who Can't Be Moved",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Script The Man Who Can't Be Moved"
+  },
+  {
+   "id": "g52d1",
+   "ar": "Calle 13",
+   "ti": "Atrévete-te-te",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Calle 13 Atrévete-te-te"
+  },
+  {
+   "id": "g2lil",
+   "ar": "Calle 13",
+   "ti": "Muerte en Hawái",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Calle 13 Muerte en Hawái"
+  },
+  {
+   "id": "1hmnv",
+   "ar": "Calle 13",
+   "ti": "Multi Viral",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Calle 13 Multi Viral"
+  },
+  {
+   "id": "ytykq",
+   "ar": "Luis Fonsi feat. Demi Lovato",
+   "ti": "Échame la Culpa",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Luis Fonsi feat. Demi Lovato Échame la Culpa"
+  },
+  {
+   "id": "17b7m",
+   "ar": "Demi Lovato",
+   "ti": "Anyone",
+   "y": 2020,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Demi Lovato Anyone"
+  },
+  {
+   "id": "1nol6",
+   "ar": "Twenty One Pilots",
+   "ti": "Car Radio",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Twenty One Pilots Car Radio"
+  },
+  {
+   "id": "55m3r",
+   "ar": "Mon Laferte feat. Juanes",
+   "ti": "Amárrame",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mon Laferte feat. Juanes Amárrame"
+  },
+  {
+   "id": "dgsg3",
+   "ar": "Maná",
+   "ti": "El Muelle de San Blas",
+   "y": 1997,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Maná El Muelle de San Blas"
+  },
+  {
+   "id": "1xiod",
+   "ar": "Juanes",
+   "ti": "La Camisa Negra",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Juanes La Camisa Negra"
+  },
+  {
+   "id": "fdjfo",
+   "ar": "Ike & Tina Turner",
+   "ti": "Proud Mary",
+   "y": 1971,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ike & Tina Turner Proud Mary"
+  },
+  {
+   "id": "sm49u",
+   "ar": "Ska-P",
+   "ti": "La Fábrica",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ska-P La Fábrica"
+  },
+  {
+   "id": "vs16v",
+   "ar": "Ska-P",
+   "ti": "Ska-P",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ska-P Ska-P"
+  },
+  {
+   "id": "18yuw",
+   "ar": "Ska-P",
+   "ti": "Colores",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ska-P Colores"
+  },
+  {
+   "id": "mnccr",
+   "ar": "Ska-P",
+   "ti": "Crimen Sollicitationis",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ska-P Crimen Sollicitationis"
+  },
+  {
+   "id": "j58ct",
+   "ar": "Molotov",
+   "ti": "Gimme Tha Power",
+   "y": 1997,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Molotov Gimme Tha Power"
+  },
+  {
+   "id": "a979e",
+   "ar": "Molotov",
+   "ti": "Frijolero",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Molotov Frijolero"
+  },
+  {
+   "id": "1u2e8",
+   "ar": "Eminem",
+   "ti": "Lose Yourself",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Eminem Lose Yourself"
+  },
+  {
+   "id": "175sk",
+   "ar": "Molotov",
+   "ti": "Hit Me",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Molotov Hit Me"
+  },
+  {
+   "id": "jjbkz",
+   "ar": "Paulina Rubio",
+   "ti": "Ni Una Sola Palabra",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Paulina Rubio Ni Una Sola Palabra"
+  },
+  {
+   "id": "hx2fd",
+   "ar": "Linkin Park",
+   "ti": "Castle of Glass",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Linkin Park Castle of Glass"
+  },
+  {
+   "id": "1rzrf",
+   "ar": "Linkin Park",
+   "ti": "Numb",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Linkin Park Numb"
+  },
+  {
+   "id": "11lfw",
+   "ar": "Muse",
+   "ti": "Won't Stand Down",
+   "y": 2022,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Muse Won't Stand Down"
+  },
+  {
+   "id": "uzwij",
+   "ar": "Twenty One Pilots",
+   "ti": "Saturday",
+   "y": 2021,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Twenty One Pilots Saturday"
+  },
+  {
+   "id": "5e4kt",
+   "ar": "The Cranberries",
+   "ti": "Zombie",
+   "y": 1994,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Cranberries Zombie"
+  },
+  {
+   "id": "r3cje",
+   "ar": "Jarabe de Palo",
+   "ti": "La Flaca",
+   "y": 1996,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Jarabe de Palo La Flaca"
+  },
+  {
+   "id": "18krp",
+   "ar": "31 Minutos",
+   "ti": "El Dinosaurio Anacleto",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "31 Minutos El Dinosaurio Anacleto"
+  },
+  {
+   "id": "17ppt",
+   "ar": "Juanes",
+   "ti": "Fotografía",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Juanes Fotografía"
+  },
+  {
+   "id": "qt2kl",
+   "ar": "Miranda!",
+   "ti": "Mentía",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Miranda! Mentía"
+  },
+  {
+   "id": "wq5qe",
+   "ar": "Julieta Venegas",
+   "ti": "Limón y Sal",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Julieta Venegas Limón y Sal"
+  },
+  {
+   "id": "fus2a",
+   "ar": "El Cuarteto de Nos",
+   "ti": "Lo Malo de Ser Bueno",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "El Cuarteto de Nos Lo Malo de Ser Bueno"
+  },
+  {
+   "id": "1ezxq",
+   "ar": "Ska-P",
+   "ti": "Jaque al Rey",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ska-P Jaque al Rey"
+  },
+  {
+   "id": "dq4hn",
+   "ar": "Oasis",
+   "ti": "Don't Look Back in Anger",
    "y": 1995,
    "sp": null,
    "it": null,
-   "q": "Aterciopelados Florecita rockera"
+   "du": null,
+   "q": "Oasis Don't Look Back in Anger"
   },
   {
-   "id": "1eji1",
-   "ar": "Charly García",
-   "ti": "Demoliendo hoteles",
-   "y": 1984,
+   "id": "gchya",
+   "ar": "Ravyn Lenae",
+   "ti": "Love Me Not",
+   "y": 2024,
    "sp": null,
    "it": null,
-   "q": "Charly García Demoliendo hoteles"
+   "du": null,
+   "q": "Ravyn Lenae Love Me Not"
   },
   {
-   "id": "24soz",
-   "ar": "Chic",
-   "ti": "Le Freak",
-   "y": 1978,
+   "id": "1jvhi",
+   "ar": "Depeche Mode",
+   "ti": "Enjoy the Silence",
+   "y": 1990,
    "sp": null,
    "it": null,
-   "q": "Chic Le Freak"
+   "du": null,
+   "q": "Depeche Mode Enjoy the Silence"
   },
   {
-   "id": "1c6vo",
-   "ar": "David Bowie",
-   "ti": "Space Oddity",
+   "id": "1q5e0",
+   "ar": "Kanye West feat. Lupe Fiasco",
+   "ti": "Touch the Sky",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Kanye West feat. Lupe Fiasco Touch the Sky"
+  },
+  {
+   "id": "1l0q4",
+   "ar": "Train",
+   "ti": "Drops of Jupiter (Tell Me)",
+   "y": 2001,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Train Drops of Jupiter (Tell Me)"
+  },
+  {
+   "id": "1jh79",
+   "ar": "Jamiroquai",
+   "ti": "Virtual Insanity",
+   "y": 1996,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Jamiroquai Virtual Insanity"
+  },
+  {
+   "id": "g18gq",
+   "ar": "Tame Impala",
+   "ti": "The Less I Know the Better",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Tame Impala The Less I Know the Better"
+  },
+  {
+   "id": "lma2e",
+   "ar": "M83",
+   "ti": "Midnight City",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "M83 Midnight City"
+  },
+  {
+   "id": "1p5a7",
+   "ar": "Swedish House Mafia feat. John Martin",
+   "ti": "Don't You Worry Child",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Swedish House Mafia feat. John Martin Don't You Worry Child"
+  },
+  {
+   "id": "1s1n7",
+   "ar": "José Luis Perales",
+   "ti": "Un Velero Llamado Libertad",
+   "y": 1979,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "José Luis Perales Un Velero Llamado Libertad"
+  },
+  {
+   "id": "1rt3u",
+   "ar": "Difuntos Correa",
+   "ti": "El Tiempo en las Bastillas",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Difuntos Correa El Tiempo en las Bastillas"
+  },
+  {
+   "id": "1krdz",
+   "ar": "Teleradio Donoso",
+   "ti": "Amar en el Campo",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Teleradio Donoso Amar en el Campo"
+  },
+  {
+   "id": "1cwe2",
+   "ar": "Electric Light Orchestra",
+   "ti": "Mr. Blue Sky",
+   "y": 1977,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Electric Light Orchestra Mr. Blue Sky"
+  },
+  {
+   "id": "14w61",
+   "ar": "Village People",
+   "ti": "In the Navy",
+   "y": 1979,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Village People In the Navy"
+  },
+  {
+   "id": "o7mze",
+   "ar": "All Time Low",
+   "ti": "Dear Maria, Count Me In",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "All Time Low Dear Maria, Count Me In"
+  },
+  {
+   "id": "1kzcq",
+   "ar": "My Chemical Romance",
+   "ti": "Welcome to the Black Parade",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "My Chemical Romance Welcome to the Black Parade"
+  },
+  {
+   "id": "i1pz4",
+   "ar": "Foster The People",
+   "ti": "Houdini",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Foster The People Houdini"
+  },
+  {
+   "id": "b3p75",
+   "ar": "Toto",
+   "ti": "Africa",
+   "y": 1982,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Toto Africa"
+  },
+  {
+   "id": "105ua",
+   "ar": "Mägo de Oz",
+   "ti": "La Posada de los Muertos",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mägo de Oz La Posada de los Muertos"
+  },
+  {
+   "id": "ltrnc",
+   "ar": "Neil Diamond",
+   "ti": "Sweet Caroline",
    "y": 1969,
    "sp": null,
    "it": null,
-   "q": "David Bowie Space Oddity"
+   "du": null,
+   "q": "Neil Diamond Sweet Caroline"
+  },
+  {
+   "id": "1d8ix",
+   "ar": "Amaral",
+   "ti": "Marta, Sebas, Guille y los demás",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Amaral Marta, Sebas, Guille y los demás"
+  },
+  {
+   "id": "egct5",
+   "ar": "Illapu",
+   "ti": "Lejos del Amor",
+   "y": 1993,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Illapu Lejos del Amor"
+  },
+  {
+   "id": "fg5bv",
+   "ar": "Los Jaivas",
+   "ti": "Mira Niñita",
+   "y": 1972,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Jaivas Mira Niñita"
+  },
+  {
+   "id": "n9si3",
+   "ar": "Daryl Hall & John Oates",
+   "ti": "You Make My Dreams (Come True)",
+   "y": 1980,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Daryl Hall & John Oates You Make My Dreams (Come True)"
+  },
+  {
+   "id": "hrfoz",
+   "ar": "Mancha de Rolando",
+   "ti": "Arde la Ciudad",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mancha de Rolando Arde la Ciudad"
+  },
+  {
+   "id": "186g0",
+   "ar": "Blink-182",
+   "ti": "All the Small Things",
+   "y": 1999,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Blink-182 All the Small Things"
+  },
+  {
+   "id": "1qznl",
+   "ar": "Goo Goo Dolls",
+   "ti": "Iris",
+   "y": 1998,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Goo Goo Dolls Iris"
+  },
+  {
+   "id": "1goky",
+   "ar": "Creedence Clearwater Revival",
+   "ti": "Fortunate Son",
+   "y": 1969,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Creedence Clearwater Revival Fortunate Son"
+  },
+  {
+   "id": "4tv03",
+   "ar": "Jimmy Eat World",
+   "ti": "The Middle",
+   "y": 2001,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Jimmy Eat World The Middle"
+  },
+  {
+   "id": "mfqdr",
+   "ar": "Boney M.",
+   "ti": "Rasputin",
+   "y": 1978,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Boney M. Rasputin"
+  },
+  {
+   "id": "5rels",
+   "ar": "Smash Mouth",
+   "ti": "All Star",
+   "y": 1999,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Smash Mouth All Star"
+  },
+  {
+   "id": "1t9sq",
+   "ar": "Ed Sheeran",
+   "ti": "Castle on the Hill",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ed Sheeran Castle on the Hill"
+  },
+  {
+   "id": "1vr0q",
+   "ar": "Creedence Clearwater Revival",
+   "ti": "Have You Ever Seen the Rain",
+   "y": 1971,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Creedence Clearwater Revival Have You Ever Seen the Rain"
+  },
+  {
+   "id": "5y9em",
+   "ar": "Aitana",
+   "ti": "Superestrella",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Aitana Superestrella"
+  },
+  {
+   "id": "1sq2o",
+   "ar": "Marcus Mumford & Tom Howe",
+   "ti": "Ted Lasso Theme",
+   "y": 2020,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Marcus Mumford & Tom Howe Ted Lasso Theme"
+  },
+  {
+   "id": "qh3ix",
+   "ar": "Empire of the Sun",
+   "ti": "We Are the People",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Empire of the Sun We Are the People"
+  },
+  {
+   "id": "hpzxv",
+   "ar": "João Bosco & Vinícius",
+   "ti": "Chora, Me Liga",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "João Bosco & Vinícius Chora, Me Liga"
+  },
+  {
+   "id": "ljjzi",
+   "ar": "Gusttavo Lima",
+   "ti": "Balada (Tchê Tcherere Tchê Tchê)",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Gusttavo Lima Balada (Tchê Tcherere Tchê Tchê)"
+  },
+  {
+   "id": "hq9l6",
+   "ar": "The Verve",
+   "ti": "Bitter Sweet Symphony",
+   "y": 1997,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Verve Bitter Sweet Symphony"
+  },
+  {
+   "id": "1c7lz",
+   "ar": "Maná",
+   "ti": "Labios Compartidos",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Maná Labios Compartidos"
+  },
+  {
+   "id": "1xuxd",
+   "ar": "Jessie J",
+   "ti": "Domino",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Jessie J Domino"
+  },
+  {
+   "id": "1igp8",
+   "ar": "Katy Perry feat. Snoop Dogg",
+   "ti": "California Gurls",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Katy Perry feat. Snoop Dogg California Gurls"
+  },
+  {
+   "id": "vsx38",
+   "ar": "Demi Lovato feat. Joe Jonas",
+   "ti": "This Is Me",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Demi Lovato feat. Joe Jonas This Is Me"
+  },
+  {
+   "id": "18uko",
+   "ar": "The Cranberries",
+   "ti": "Linger",
+   "y": 1993,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Cranberries Linger"
+  },
+  {
+   "id": "1rgaq",
+   "ar": "Ela Taubert",
+   "ti": "¿Cómo Pasó?",
+   "y": 2024,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ela Taubert ¿Cómo Pasó?"
+  },
+  {
+   "id": "1pbyo",
+   "ar": "Keane",
+   "ti": "Somewhere Only We Know",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Keane Somewhere Only We Know"
+  },
+  {
+   "id": "1w716",
+   "ar": "Ska-P",
+   "ti": "Niño Soldado",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ska-P Niño Soldado"
+  },
+  {
+   "id": "d5hbf",
+   "ar": "Sean Kingston feat. Justin Bieber",
+   "ti": "Eenie Meenie",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sean Kingston feat. Justin Bieber Eenie Meenie"
+  },
+  {
+   "id": "2unu2",
+   "ar": "Justin Bieber feat. Nicki Minaj",
+   "ti": "Beauty and a Beat",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Justin Bieber feat. Nicki Minaj Beauty and a Beat"
+  },
+  {
+   "id": "78uzt",
+   "ar": "Selena Gomez & The Scene",
+   "ti": "Love You Like a Love Song",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Selena Gomez & The Scene Love You Like a Love Song"
+  },
+  {
+   "id": "gpz4l",
+   "ar": "Los Caligaris",
+   "ti": "Kilómetros",
+   "y": 2007,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Caligaris Kilómetros"
+  },
+  {
+   "id": "1sacd",
+   "ar": "The Outfield",
+   "ti": "Your Love",
+   "y": 1985,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Outfield Your Love"
+  },
+  {
+   "id": "tsbjf",
+   "ar": "Israel Kamakawiwo'ole",
+   "ti": "Somewhere Over the Rainbow/What a Wonderful World",
+   "y": 1993,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Israel Kamakawiwo'ole Somewhere Over the Rainbow/What a Wonderful World"
+  },
+  {
+   "id": "s5u1e",
+   "ar": "Djo",
+   "ti": "End of Beginning",
+   "y": 2022,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Djo End of Beginning"
+  },
+  {
+   "id": "skgb3",
+   "ar": "Opus",
+   "ti": "Live Is Life",
+   "y": 1985,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Opus Live Is Life"
+  },
+  {
+   "id": "x9li9",
+   "ar": "The Police",
+   "ti": "Every Breath You Take",
+   "y": 1983,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Police Every Breath You Take"
+  },
+  {
+   "id": "nrtc6",
+   "ar": "Álex Ubago",
+   "ti": "Sigo Aquí",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Álex Ubago Sigo Aquí"
+  },
+  {
+   "id": "uq4z1",
+   "ar": "Tears for Fears",
+   "ti": "Everybody Wants to Rule the World",
+   "y": 1985,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Tears for Fears Everybody Wants to Rule the World"
+  },
+  {
+   "id": "1xkxi",
+   "ar": "Radiohead",
+   "ti": "Creep",
+   "y": 1992,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Radiohead Creep"
+  },
+  {
+   "id": "1lqzk",
+   "ar": "Lynyrd Skynyrd",
+   "ti": "Free Bird",
+   "y": 1973,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Lynyrd Skynyrd Free Bird"
+  },
+  {
+   "id": "1rut6",
+   "ar": "Lynyrd Skynyrd",
+   "ti": "Sweet Home Alabama",
+   "y": 1974,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Lynyrd Skynyrd Sweet Home Alabama"
+  },
+  {
+   "id": "a8ij2",
+   "ar": "Men at Work",
+   "ti": "Down Under",
+   "y": 1981,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Men at Work Down Under"
   },
   {
    "id": "m43r1",
@@ -1425,34 +1622,2038 @@
    "y": 1985,
    "sp": null,
    "it": null,
+   "du": null,
    "q": "Dire Straits Money for Nothing"
   },
   {
-   "id": "xh256",
-   "ar": "Inti-Illimani",
-   "ti": "El pueblo unido jamás será vencido",
-   "y": 1973,
-   "sp": null,
-   "it": null,
-   "q": "Inti-Illimani El pueblo unido jamás será vencido"
-  },
-  {
-   "id": "yg0v9",
-   "ar": "Prince",
-   "ti": "Purple Rain",
-   "y": 1984,
-   "sp": null,
-   "it": null,
-   "q": "Prince Purple Rain"
-  },
-  {
-   "id": "v1yva",
-   "ar": "Rosalía",
-   "ti": "Malamente",
+   "id": "aa9df",
+   "ar": "Lasso feat. Cami",
+   "ti": "Un Millón Como Tú",
    "y": 2018,
    "sp": null,
    "it": null,
-   "q": "Rosalía Malamente"
+   "du": null,
+   "q": "Lasso feat. Cami Un Millón Como Tú"
+  },
+  {
+   "id": "10677",
+   "ar": "Morat feat. Juanes",
+   "ti": "Besos en Guerra",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Morat feat. Juanes Besos en Guerra"
+  },
+  {
+   "id": "163hn",
+   "ar": "Melendi",
+   "ti": "Tu Jardín con Enanitos",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Melendi Tu Jardín con Enanitos"
+  },
+  {
+   "id": "bwrl5",
+   "ar": "Ricardo Arjona feat. Gaby Moreno",
+   "ti": "Fuiste Tú",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ricardo Arjona feat. Gaby Moreno Fuiste Tú"
+  },
+  {
+   "id": "1oony",
+   "ar": "Carlos Baute feat. Marta Sánchez",
+   "ti": "Colgando en tus Manos",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Carlos Baute feat. Marta Sánchez Colgando en tus Manos"
+  },
+  {
+   "id": "cly4p",
+   "ar": "Reik",
+   "ti": "Inolvidable",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Reik Inolvidable"
+  },
+  {
+   "id": "1lsgl",
+   "ar": "La Oreja de Van Gogh",
+   "ti": "Puedes Contar Conmigo",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "La Oreja de Van Gogh Puedes Contar Conmigo"
+  },
+  {
+   "id": "i0gdm",
+   "ar": "Juanes",
+   "ti": "A Dios le Pido",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Juanes A Dios le Pido"
+  },
+  {
+   "id": "11qq3",
+   "ar": "Christian Mejlænder Krogsvold (Waterflame)",
+   "ti": "Glorious Morning",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Christian Mejlænder Krogsvold (Waterflame) Glorious Morning"
+  },
+  {
+   "id": "fg9ve",
+   "ar": "Vicetone",
+   "ti": "Barcelona Nights",
+   "y": 2022,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Vicetone Barcelona Nights"
+  },
+  {
+   "id": "mq09r",
+   "ar": "David Guetta feat. Kid Cudi",
+   "ti": "Memories",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "David Guetta feat. Kid Cudi Memories"
+  },
+  {
+   "id": "1v021",
+   "ar": "Miguel Bosé",
+   "ti": "Morena Mía",
+   "y": 2007,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Miguel Bosé Morena Mía"
+  },
+  {
+   "id": "1th87",
+   "ar": "El Cuarteto de Nos",
+   "ti": "No Llora",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "El Cuarteto de Nos No Llora"
+  },
+  {
+   "id": "ufss1",
+   "ar": "Alan Sutton y las Criaturitas de la Ansiedad",
+   "ti": "Bonsai",
+   "y": 2023,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Alan Sutton y las Criaturitas de la Ansiedad Bonsai"
+  },
+  {
+   "id": "1is4j",
+   "ar": "Kenny Man",
+   "ti": "Ni Gucci Ni Prada",
+   "y": 2020,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Kenny Man Ni Gucci Ni Prada"
+  },
+  {
+   "id": "tuyu8",
+   "ar": "SantaFeria",
+   "ti": "El Gil de Tu Ex",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "SantaFeria El Gil de Tu Ex"
+  },
+  {
+   "id": "119tz",
+   "ar": "Myke Towers feat. Quevedo",
+   "ti": "Soleao",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Myke Towers feat. Quevedo Soleao"
+  },
+  {
+   "id": "1lt9z",
+   "ar": "Milo J",
+   "ti": "Cuando el Agua Hirviendo",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Milo J Cuando el Agua Hirviendo"
+  },
+  {
+   "id": "26epy",
+   "ar": "Milo J feat. Trueno",
+   "ti": "Gil",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Milo J feat. Trueno Gil"
+  },
+  {
+   "id": "137h5",
+   "ar": "Mora feat. C. Tangana",
+   "ti": "Droga",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mora feat. C. Tangana Droga"
+  },
+  {
+   "id": "xdhuo",
+   "ar": "Lin-Manuel Miranda",
+   "ti": "My Shot",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Lin-Manuel Miranda My Shot"
+  },
+  {
+   "id": "41a73",
+   "ar": "Bad Bunny",
+   "ti": "DtMF",
+   "y": 2025,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bad Bunny DtMF"
+  },
+  {
+   "id": "1fxy2",
+   "ar": "Bad Bunny",
+   "ti": "Turista",
+   "y": 2022,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bad Bunny Turista"
+  },
+  {
+   "id": "12dq4",
+   "ar": "Luck Ra feat. KHEA",
+   "ti": "Hola Perdida",
+   "y": 2023,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Luck Ra feat. KHEA Hola Perdida"
+  },
+  {
+   "id": "sv9qg",
+   "ar": "Paramore",
+   "ti": "Ain't It Fun",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Paramore Ain't It Fun"
+  },
+  {
+   "id": "1410x",
+   "ar": "WOS feat. Nicki Nicole",
+   "ti": "Cambiando la Piel",
+   "y": 2021,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "WOS feat. Nicki Nicole Cambiando la Piel"
+  },
+  {
+   "id": "9zxxv",
+   "ar": "Hozier",
+   "ti": "Eat Your Young",
+   "y": 2023,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Hozier Eat Your Young"
+  },
+  {
+   "id": "lwajf",
+   "ar": "Babasónicos",
+   "ti": "Risa",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Babasónicos Risa"
+  },
+  {
+   "id": "1mknl",
+   "ar": "Nicki Nicole",
+   "ti": "Parte de Mí",
+   "y": 2021,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Nicki Nicole Parte de Mí"
+  },
+  {
+   "id": "1m22c",
+   "ar": "Red Hot Chili Peppers",
+   "ti": "Dark Necessities",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Red Hot Chili Peppers Dark Necessities"
+  },
+  {
+   "id": "1o5aw",
+   "ar": "WILLOW",
+   "ti": "Wait a Minute!",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "WILLOW Wait a Minute!"
+  },
+  {
+   "id": "1a4sp",
+   "ar": "MGMT",
+   "ti": "Kids",
+   "y": 2007,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "MGMT Kids"
+  },
+  {
+   "id": "cwoyp",
+   "ar": "Miranda!",
+   "ti": "Don",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Miranda! Don"
+  },
+  {
+   "id": "hx7t9",
+   "ar": "Childish Gambino",
+   "ti": "Summertime Magic",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Childish Gambino Summertime Magic"
+  },
+  {
+   "id": "rd0j3",
+   "ar": "Dua Lipa",
+   "ti": "Houdini",
+   "y": 2023,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Dua Lipa Houdini"
+  },
+  {
+   "id": "otx8r",
+   "ar": "Years & Years",
+   "ti": "King",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Years & Years King"
+  },
+  {
+   "id": "14xcv",
+   "ar": "The Who",
+   "ti": "Baba O'Riley",
+   "y": 1971,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Who Baba O'Riley"
+  },
+  {
+   "id": "1cyqe",
+   "ar": "Blur",
+   "ti": "Song 2",
+   "y": 1997,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Blur Song 2"
+  },
+  {
+   "id": "1gxsz",
+   "ar": "C. Tangana feat. Carin León & Adriel Favela",
+   "ti": "Cambia!",
+   "y": 2021,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "C. Tangana feat. Carin León & Adriel Favela Cambia!"
+  },
+  {
+   "id": "z45xn",
+   "ar": "Years & Years",
+   "ti": "Desire",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Years & Years Desire"
+  },
+  {
+   "id": "14nl4",
+   "ar": "Miguel Bosé",
+   "ti": "Amante Bandido",
+   "y": 1984,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Miguel Bosé Amante Bandido"
+  },
+  {
+   "id": "1ikbx",
+   "ar": "Moral Distraída",
+   "ti": "Chaleco Bomba",
+   "y": 2020,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Moral Distraída Chaleco Bomba"
+  },
+  {
+   "id": "vdv1j",
+   "ar": "d4vd",
+   "ti": "Here With Me",
+   "y": 2022,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "d4vd Here With Me"
+  },
+  {
+   "id": "1rw8o",
+   "ar": "Ozuna",
+   "ti": "Se Preparó",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna Se Preparó"
+  },
+  {
+   "id": "lmu8m",
+   "ar": "Post Malone",
+   "ti": "Circles",
+   "y": 2019,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Post Malone Circles"
+  },
+  {
+   "id": "1t0wi",
+   "ar": "Ozuna",
+   "ti": "Vaina Loca",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna Vaina Loca"
+  },
+  {
+   "id": "okvrn",
+   "ar": "Oasis",
+   "ti": "Stand By Me",
+   "y": 1997,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Oasis Stand By Me"
+  },
+  {
+   "id": "1oe9f",
+   "ar": "Ozuna",
+   "ti": "El Farsante",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna El Farsante"
+  },
+  {
+   "id": "1gc5e",
+   "ar": "Post Malone feat. Swae Lee",
+   "ti": "Sunflower",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Post Malone feat. Swae Lee Sunflower"
+  },
+  {
+   "id": "1g2rw",
+   "ar": "Calle 13",
+   "ti": "Vamo' a Portarnos Mal",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Calle 13 Vamo' a Portarnos Mal"
+  },
+  {
+   "id": "8s2lq",
+   "ar": "Paulo Londra",
+   "ti": "Adán y Eva",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Paulo Londra Adán y Eva"
+  },
+  {
+   "id": "1t06i",
+   "ar": "Bruno Mars",
+   "ti": "24K Magic",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bruno Mars 24K Magic"
+  },
+  {
+   "id": "ccycg",
+   "ar": "Ariana Grande",
+   "ti": "Dangerous Woman",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ariana Grande Dangerous Woman"
+  },
+  {
+   "id": "1nj5b",
+   "ar": "Jesse & Joy",
+   "ti": "Espacio Sideral",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Jesse & Joy Espacio Sideral"
+  },
+  {
+   "id": "1s63j",
+   "ar": "Anti Barras Club 2 (ABC2)",
+   "ti": "Colo Colo Aesthetic",
+   "y": 2024,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Anti Barras Club 2 (ABC2) Colo Colo Aesthetic"
+  },
+  {
+   "id": "1t63r",
+   "ar": "Luny Tunes, Daddy Yankee, Don Omar & Wisin & Yandel",
+   "ti": "Mayor Que Yo 3",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Luny Tunes, Daddy Yankee, Don Omar & Wisin & Yandel Mayor Que Yo 3"
+  },
+  {
+   "id": "1juew",
+   "ar": "Cali & El Dandee",
+   "ti": "Gol",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Cali & El Dandee Gol"
+  },
+  {
+   "id": "1rlxb",
+   "ar": "Don Omar",
+   "ti": "Dale Don Dale",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Don Omar Dale Don Dale"
+  },
+  {
+   "id": "18p2p",
+   "ar": "Tito El Bambino",
+   "ti": "Mi Cama Huele a Ti",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Tito El Bambino Mi Cama Huele a Ti"
+  },
+  {
+   "id": "ke2lg",
+   "ar": "Zion",
+   "ti": "Zun Da Da",
+   "y": 2007,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Zion Zun Da Da"
+  },
+  {
+   "id": "64ocq",
+   "ar": "Bad Bunny",
+   "ti": "Si Estuviésemos Juntos",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bad Bunny Si Estuviésemos Juntos"
+  },
+  {
+   "id": "u9i4c",
+   "ar": "Alkilados feat. Dálmata",
+   "ti": "Solitaria",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Alkilados feat. Dálmata Solitaria"
+  },
+  {
+   "id": "90xtj",
+   "ar": "Mac Miller feat. Anderson .Paak",
+   "ti": "Dang!",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mac Miller feat. Anderson .Paak Dang!"
+  },
+  {
+   "id": "1bopt",
+   "ar": "Don Omar",
+   "ti": "Pobre Diabla",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Don Omar Pobre Diabla"
+  },
+  {
+   "id": "cvhlx",
+   "ar": "Cali & El Dandee",
+   "ti": "Yo Te Esperaré",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Cali & El Dandee Yo Te Esperaré"
+  },
+  {
+   "id": "1vr3w",
+   "ar": "Plan B",
+   "ti": "Si No Le Contesto",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Plan B Si No Le Contesto"
+  },
+  {
+   "id": "y9m32",
+   "ar": "Arcángel",
+   "ti": "Hace Mucho Tiempo",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Arcángel Hace Mucho Tiempo"
+  },
+  {
+   "id": "17w97",
+   "ar": "Post Malone feat. Ty Dolla $ign",
+   "ti": "Psycho",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Post Malone feat. Ty Dolla $ign Psycho"
+  },
+  {
+   "id": "ibnz1",
+   "ar": "Ozuna feat. Luigi 21 Plus",
+   "ti": "Me Reclama",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna feat. Luigi 21 Plus Me Reclama"
+  },
+  {
+   "id": "hf05j",
+   "ar": "Post Malone",
+   "ti": "Better Now",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Post Malone Better Now"
+  },
+  {
+   "id": "1demk",
+   "ar": "Ozuna",
+   "ti": "Síguelo Bailando",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna Síguelo Bailando"
+  },
+  {
+   "id": "1wjcf",
+   "ar": "La Oreja de Van Gogh",
+   "ti": "Geografía",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "La Oreja de Van Gogh Geografía"
+  },
+  {
+   "id": "u8dao",
+   "ar": "Ozuna",
+   "ti": "Tu Foto",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna Tu Foto"
+  },
+  {
+   "id": "1xxc1",
+   "ar": "Anuel AA",
+   "ti": "Hipócrita",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Anuel AA Hipócrita"
+  },
+  {
+   "id": "ibmz3",
+   "ar": "La Oreja de Van Gogh",
+   "ti": "20 de Enero",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "La Oreja de Van Gogh 20 de Enero"
+  },
+  {
+   "id": "1qksp",
+   "ar": "La Oreja de Van Gogh",
+   "ti": "Rosas",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "La Oreja de Van Gogh Rosas"
+  },
+  {
+   "id": "bjs1o",
+   "ar": "Ozuna feat. Lunay, Rauw Alejandro & Lyanno",
+   "ti": "Luz Apaga",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna feat. Lunay, Rauw Alejandro & Lyanno Luz Apaga"
+  },
+  {
+   "id": "g9log",
+   "ar": "Moral Distraída",
+   "ti": "Hacerlo de Día",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Moral Distraída Hacerlo de Día"
+  },
+  {
+   "id": "8genr",
+   "ar": "Moral Distraída",
+   "ti": "Recreo",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Moral Distraída Recreo"
+  },
+  {
+   "id": "1lrmf",
+   "ar": "Khalid",
+   "ti": "8TEEN",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Khalid 8TEEN"
+  },
+  {
+   "id": "1w6nq",
+   "ar": "Sebastián Yatra feat. Luis Figueroa & Lary Over",
+   "ti": "Por Perro",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sebastián Yatra feat. Luis Figueroa & Lary Over Por Perro"
+  },
+  {
+   "id": "lopoi",
+   "ar": "Ozuna",
+   "ti": "Baila Baila Baila",
+   "y": 2019,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ozuna Baila Baila Baila"
+  },
+  {
+   "id": "1kfto",
+   "ar": "Sam Smith",
+   "ti": "Nothing Left for You",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sam Smith Nothing Left for You"
+  },
+  {
+   "id": "362n1",
+   "ar": "Sam Smith",
+   "ti": "The Thrill of It All",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sam Smith The Thrill of It All"
+  },
+  {
+   "id": "7ix9e",
+   "ar": "Macklemore feat. Skylar Grey",
+   "ti": "Glorious",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Macklemore feat. Skylar Grey Glorious"
+  },
+  {
+   "id": "1yafh",
+   "ar": "P!nk",
+   "ti": "So What",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "P!nk So What"
+  },
+  {
+   "id": "1dcv4",
+   "ar": "Macklemore feat. Kesha",
+   "ti": "Good Old Days",
+   "y": 2017,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Macklemore feat. Kesha Good Old Days"
+  },
+  {
+   "id": "1xqoj",
+   "ar": "Cody Simpson",
+   "ti": "Surfboard",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Cody Simpson Surfboard"
+  },
+  {
+   "id": "b1koe",
+   "ar": "Coldplay",
+   "ti": "Viva la Vida",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Coldplay Viva la Vida"
+  },
+  {
+   "id": "1doew",
+   "ar": "La Combo Tortuga",
+   "ti": "Soy Feo Pero Rico",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "La Combo Tortuga Soy Feo Pero Rico"
+  },
+  {
+   "id": "9bh6t",
+   "ar": "Coldplay",
+   "ti": "Clocks",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Coldplay Clocks"
+  },
+  {
+   "id": "sdymf",
+   "ar": "Coldplay",
+   "ti": "Yellow",
+   "y": 2000,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Coldplay Yellow"
+  },
+  {
+   "id": "jp740",
+   "ar": "Coldplay",
+   "ti": "Paradise",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Coldplay Paradise"
+  },
+  {
+   "id": "f0t6f",
+   "ar": "Coldplay",
+   "ti": "A Sky Full of Stars",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Coldplay A Sky Full of Stars"
+  },
+  {
+   "id": "1ikov",
+   "ar": "Coldplay",
+   "ti": "Lost!",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Coldplay Lost!"
+  },
+  {
+   "id": "1c51t",
+   "ar": "Gorillaz",
+   "ti": "Dare",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Gorillaz Dare"
+  },
+  {
+   "id": "xn4ad",
+   "ar": "Gorillaz",
+   "ti": "Clint Eastwood",
+   "y": 2001,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Gorillaz Clint Eastwood"
+  },
+  {
+   "id": "rxql2",
+   "ar": "Macklemore & Ryan Lewis feat. Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz",
+   "ti": "Downtown",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Macklemore & Ryan Lewis feat. Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz Downtown"
+  },
+  {
+   "id": "41yu7",
+   "ar": "Gorillaz",
+   "ti": "Feel Good Inc.",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Gorillaz Feel Good Inc."
+  },
+  {
+   "id": "sliw4",
+   "ar": "Calle 13",
+   "ti": "Latinoamérica",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Calle 13 Latinoamérica"
+  },
+  {
+   "id": "qt05y",
+   "ar": "Macklemore & Ryan Lewis feat. Ray Dalton",
+   "ti": "Can't Hold Us",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Macklemore & Ryan Lewis feat. Ray Dalton Can't Hold Us"
+  },
+  {
+   "id": "1il42",
+   "ar": "Pablo Alborán",
+   "ti": "Saturno",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Pablo Alborán Saturno"
+  },
+  {
+   "id": "1fbpp",
+   "ar": "Ricardo Arjona",
+   "ti": "Minutos",
+   "y": 2002,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ricardo Arjona Minutos"
+  },
+  {
+   "id": "qlj96",
+   "ar": "Incubus",
+   "ti": "Drive",
+   "y": 1999,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Incubus Drive"
+  },
+  {
+   "id": "1evae",
+   "ar": "My Chemical Romance",
+   "ti": "I'm Not Okay (I Promise)",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "My Chemical Romance I'm Not Okay (I Promise)"
+  },
+  {
+   "id": "11x9x",
+   "ar": "Daddy Yankee",
+   "ti": "Llamado de Emergencia",
+   "y": 2007,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Daddy Yankee Llamado de Emergencia"
+  },
+  {
+   "id": "1v4hw",
+   "ar": "Nickelback",
+   "ti": "Photograph",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Nickelback Photograph"
+  },
+  {
+   "id": "iotg6",
+   "ar": "Gotye feat. Kimbra",
+   "ti": "Somebody That I Used To Know",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Gotye feat. Kimbra Somebody That I Used To Know"
+  },
+  {
+   "id": "p88r4",
+   "ar": "Rusted Root",
+   "ti": "Send Me on My Way",
+   "y": 1994,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Rusted Root Send Me on My Way"
+  },
+  {
+   "id": "i2564",
+   "ar": "Elvis Presley",
+   "ti": "Hound Dog",
+   "y": 1956,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Elvis Presley Hound Dog"
+  },
+  {
+   "id": "fs3on",
+   "ar": "Amar Azul",
+   "ti": "Yo Tomo",
+   "y": 2000,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Amar Azul Yo Tomo"
+  },
+  {
+   "id": "106tl",
+   "ar": "TINI feat. Morat",
+   "ti": "Consejo de Amor",
+   "y": 2018,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "TINI feat. Morat Consejo de Amor"
+  },
+  {
+   "id": "7wuku",
+   "ar": "David Bowie",
+   "ti": "Starman",
+   "y": 1972,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "David Bowie Starman"
+  },
+  {
+   "id": "9m24o",
+   "ar": "Avicii",
+   "ti": "Wake Me Up",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Avicii Wake Me Up"
+  },
+  {
+   "id": "3dpt7",
+   "ar": "REO Speedwagon",
+   "ti": "Can't Fight This Feeling",
+   "y": 1984,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "REO Speedwagon Can't Fight This Feeling"
+  },
+  {
+   "id": "104wg",
+   "ar": "Billy Joel",
+   "ti": "Piano Man",
+   "y": 1973,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Billy Joel Piano Man"
+  },
+  {
+   "id": "vs7xg",
+   "ar": "Los Prisioneros",
+   "ti": "Tren al Sur",
+   "y": 1990,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Prisioneros Tren al Sur"
+  },
+  {
+   "id": "8ogfj",
+   "ar": "Anuel AA",
+   "ti": "Sola",
+   "y": 2016,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Anuel AA Sola"
+  },
+  {
+   "id": "155em",
+   "ar": "The Beatles",
+   "ti": "Twist and Shout",
+   "y": 1963,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Beatles Twist and Shout"
+  },
+  {
+   "id": "fckgr",
+   "ar": "Queen",
+   "ti": "Bohemian Rhapsody",
+   "y": 1975,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Queen Bohemian Rhapsody"
+  },
+  {
+   "id": "1g148",
+   "ar": "Børns",
+   "ti": "Electric Love",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Børns Electric Love"
+  },
+  {
+   "id": "17l93",
+   "ar": "ROLE MODEL",
+   "ti": "Deeply Still In Love",
+   "y": 2024,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "ROLE MODEL Deeply Still In Love"
+  },
+  {
+   "id": "1p2ut",
+   "ar": "FINNEAS",
+   "ti": "For Cryin' Out Loud!",
+   "y": 2024,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "FINNEAS For Cryin' Out Loud!"
+  },
+  {
+   "id": "neay6",
+   "ar": "Coyote Theory",
+   "ti": "This Side of Paradise",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Coyote Theory This Side of Paradise"
+  },
+  {
+   "id": "12hwj",
+   "ar": "Plain White T's",
+   "ti": "Hey There Delilah",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Plain White T's Hey There Delilah"
+  },
+  {
+   "id": "1l726",
+   "ar": "The Beatles",
+   "ti": "Hey Jude",
+   "y": 1968,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Beatles Hey Jude"
+  },
+  {
+   "id": "1ti79",
+   "ar": "Hannah Montana",
+   "ti": "You'll Always Find Your Way Back Home",
+   "y": 2007,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Hannah Montana You'll Always Find Your Way Back Home"
+  },
+  {
+   "id": "rrpat",
+   "ar": "Hoobastank",
+   "ti": "The Reason",
+   "y": 2003,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Hoobastank The Reason"
+  },
+  {
+   "id": "1s3rk",
+   "ar": "OneRepublic",
+   "ti": "Secrets",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "OneRepublic Secrets"
+  },
+  {
+   "id": "1l47p",
+   "ar": "Gigi D'Agostino",
+   "ti": "L'Amour Toujours",
+   "y": 1999,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Gigi D'Agostino L'Amour Toujours"
+  },
+  {
+   "id": "4lbcn",
+   "ar": "Stromae",
+   "ti": "Alors on Danse",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Stromae Alors on Danse"
+  },
+  {
+   "id": "1kbe5",
+   "ar": "Kevin Johansen",
+   "ti": "Anoche Soñé Contigo",
+   "y": 2007,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Kevin Johansen Anoche Soñé Contigo"
+  },
+  {
+   "id": "un5cc",
+   "ar": "Jorge Drexler",
+   "ti": "Todo Se Transforma",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Jorge Drexler Todo Se Transforma"
+  },
+  {
+   "id": "2hdfs",
+   "ar": "Wisin & Yandel",
+   "ti": "Ahora Es",
+   "y": 2008,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Wisin & Yandel Ahora Es"
+  },
+  {
+   "id": "akkxd",
+   "ar": "Wisin & Yandel feat. Chris Brown & T-Pain",
+   "ti": "Algo Me Gusta De Ti",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Wisin & Yandel feat. Chris Brown & T-Pain Algo Me Gusta De Ti"
+  },
+  {
+   "id": "p5pqf",
+   "ar": "Enrique Iglesias",
+   "ti": "Hero",
+   "y": 2001,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Enrique Iglesias Hero"
+  },
+  {
+   "id": "hj2l1",
+   "ar": "Tracy Chapman",
+   "ti": "Fast Car",
+   "y": 1988,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Tracy Chapman Fast Car"
+  },
+  {
+   "id": "41iiu",
+   "ar": "Katy Perry",
+   "ti": "The One That Got Away",
+   "y": 2010,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Katy Perry The One That Got Away"
+  },
+  {
+   "id": "1yqe2",
+   "ar": "Green Day",
+   "ti": "Boulevard of Broken Dreams",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Green Day Boulevard of Broken Dreams"
+  },
+  {
+   "id": "v1dai",
+   "ar": "Green Day",
+   "ti": "Holiday",
+   "y": 2004,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Green Day Holiday"
+  },
+  {
+   "id": "mcyu5",
+   "ar": "The Cure",
+   "ti": "Friday I'm In Love",
+   "y": 1992,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Cure Friday I'm In Love"
+  },
+  {
+   "id": "1k32u",
+   "ar": "David Guetta feat. Sia",
+   "ti": "Titanium",
+   "y": 2011,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "David Guetta feat. Sia Titanium"
+  },
+  {
+   "id": "sgrcy",
+   "ar": "MKTO",
+   "ti": "Classic",
+   "y": 2013,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "MKTO Classic"
+  },
+  {
+   "id": "1nv6x",
+   "ar": "Luis Fonsi",
+   "ti": "Corazón en la Maleta",
+   "y": 2014,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Luis Fonsi Corazón en la Maleta"
+  },
+  {
+   "id": "oju0u",
+   "ar": "Cristian Castro",
+   "ti": "Azul",
+   "y": 2001,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Cristian Castro Azul"
+  },
+  {
+   "id": "1d6nk",
+   "ar": "Camila",
+   "ti": "Mientes",
+   "y": 2009,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Camila Mientes"
+  },
+  {
+   "id": "1dki8",
+   "ar": "Mike Posner",
+   "ti": "I Took a Pill in Ibiza",
+   "y": 2015,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mike Posner I Took a Pill in Ibiza"
+  },
+  {
+   "id": "5cqyj",
+   "ar": "Rascal Flatts",
+   "ti": "Life Is a Highway",
+   "y": 2006,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Rascal Flatts Life Is a Highway"
+  },
+  {
+   "id": "vwqlg",
+   "ar": "The Lumineers",
+   "ti": "Ho Hey",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Lumineers Ho Hey"
+  },
+  {
+   "id": "15d7g",
+   "ar": "Soda Stereo",
+   "ti": "Persiana Americana",
+   "y": 1986,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Soda Stereo Persiana Americana"
+  },
+  {
+   "id": "w8frp",
+   "ar": "Backstreet Boys",
+   "ti": "I Want It That Way",
+   "y": 1999,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Backstreet Boys I Want It That Way"
+  },
+  {
+   "id": "1k3u3",
+   "ar": "Melendi",
+   "ti": "Cheque al Portamor",
+   "y": 2012,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Melendi Cheque al Portamor"
+  },
+  {
+   "id": "e3dlh",
+   "ar": "Reik",
+   "ti": "Noviembre Sin Ti",
+   "y": 2005,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Reik Noviembre Sin Ti"
+  },
+  {
+   "id": "guc5w",
+   "ar": "Luis Miguel",
+   "ti": "Isabel",
+   "y": 1984,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Luis Miguel Isabel"
+  },
+  {
+   "id": "kp7ks",
+   "ar": "Maná",
+   "ti": "Clavado en un Bar",
+   "y": 1997,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Maná Clavado en un Bar"
+  },
+  {
+   "id": "1sc2u",
+   "ar": "Bad Bunny",
+   "ti": "Yonaguni",
+   "y": 2021,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bad Bunny Yonaguni"
+  },
+  {
+   "id": "1j0oe",
+   "ar": "Captain & Tennille",
+   "ti": "Love Will Keep Us Together",
+   "y": 1975,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Captain & Tennille Love Will Keep Us Together"
+  },
+  {
+   "id": "shsqc",
+   "ar": "Led Zeppelin",
+   "ti": "Kashmir",
+   "y": 1975,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Led Zeppelin Kashmir"
+  },
+  {
+   "id": "s0ot6",
+   "ar": "Juan Gabriel",
+   "ti": "Se Me Olvidó Otra Vez",
+   "y": 1975,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Juan Gabriel Se Me Olvidó Otra Vez"
+  },
+  {
+   "id": "1118v",
+   "ar": "Boston",
+   "ti": "More Than a Feeling",
+   "y": 1976,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Boston More Than a Feeling"
+  },
+  {
+   "id": "1u6sk",
+   "ar": "The Four Seasons",
+   "ti": "December, 1963 (Oh, What a Night)",
+   "y": 1976,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Four Seasons December, 1963 (Oh, What a Night)"
+  },
+  {
+   "id": "1sowe",
+   "ar": "Kansas",
+   "ti": "Carry On Wayward Son",
+   "y": 1976,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Kansas Carry On Wayward Son"
+  },
+  {
+   "id": "1eoxy",
+   "ar": "Julio Iglesias",
+   "ti": "Soy un Truhán, Soy un Señor",
+   "y": 1977,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Julio Iglesias Soy un Truhán, Soy un Señor"
+  },
+  {
+   "id": "1n7mq",
+   "ar": "Roberto Carlos",
+   "ti": "Amigo",
+   "y": 1977,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Roberto Carlos Amigo"
+  },
+  {
+   "id": "2kpew",
+   "ar": "Fleetwood Mac",
+   "ti": "Dreams",
+   "y": 1977,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Fleetwood Mac Dreams"
+  },
+  {
+   "id": "a26my",
+   "ar": "León Gieco",
+   "ti": "Sólo le Pido a Dios",
+   "y": 1978,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "León Gieco Sólo le Pido a Dios"
+  },
+  {
+   "id": "aud2l",
+   "ar": "Gloria Gaynor",
+   "ti": "I Will Survive",
+   "y": 1978,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Gloria Gaynor I Will Survive"
+  },
+  {
+   "id": "9sz8v",
+   "ar": "The Rolling Stones",
+   "ti": "Miss You",
+   "y": 1978,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Rolling Stones Miss You"
+  },
+  {
+   "id": "1p9fg",
+   "ar": "The Knack",
+   "ti": "My Sharona",
+   "y": 1979,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The Knack My Sharona"
+  },
+  {
+   "id": "txt5k",
+   "ar": "Serú Girán",
+   "ti": "Los Sobrevivientes",
+   "y": 1979,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Serú Girán Los Sobrevivientes"
+  },
+  {
+   "id": "15zyr",
+   "ar": "Blondie",
+   "ti": "Call Me",
+   "y": 1980,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Blondie Call Me"
+  },
+  {
+   "id": "zgowu",
+   "ar": "Lipps Inc.",
+   "ti": "Funkytown",
+   "y": 1980,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Lipps Inc. Funkytown"
+  },
+  {
+   "id": "1kpi3",
+   "ar": "AC/DC",
+   "ti": "Back in Black",
+   "y": 1980,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "AC/DC Back in Black"
+  },
+  {
+   "id": "1gmk2",
+   "ar": "Kim Carnes",
+   "ti": "Bette Davis Eyes",
+   "y": 1981,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Kim Carnes Bette Davis Eyes"
+  },
+  {
+   "id": "41exc",
+   "ar": "Journey",
+   "ti": "Don't Stop Believin'",
+   "y": 1981,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Journey Don't Stop Believin'"
+  },
+  {
+   "id": "5cbcy",
+   "ar": "Menudo",
+   "ti": "Fuego",
+   "y": 1981,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Menudo Fuego"
+  },
+  {
+   "id": "h6n68",
+   "ar": "Survivor",
+   "ti": "Eye of the Tiger",
+   "y": 1982,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Survivor Eye of the Tiger"
+  },
+  {
+   "id": "d9fbs",
+   "ar": "Mecano",
+   "ti": "Hoy No Me Puedo Levantar",
+   "y": 1982,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Mecano Hoy No Me Puedo Levantar"
+  },
+  {
+   "id": "1xtvb",
+   "ar": "Dexys Midnight Runners",
+   "ti": "Come On Eileen",
+   "y": 1982,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Dexys Midnight Runners Come On Eileen"
+  },
+  {
+   "id": "jzvt8",
+   "ar": "Michael Jackson",
+   "ti": "Billie Jean",
+   "y": 1983,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Michael Jackson Billie Jean"
+  },
+  {
+   "id": "15rl0",
+   "ar": "Charly García",
+   "ti": "Los Dinosaurios",
+   "y": 1983,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Charly García Los Dinosaurios"
+  },
+  {
+   "id": "761ge",
+   "ar": "Los Abuelos de la Nada",
+   "ti": "Mil Horas",
+   "y": 1983,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Abuelos de la Nada Mil Horas"
+  },
+  {
+   "id": "14jcf",
+   "ar": "Bon Jovi",
+   "ti": "Livin' on a Prayer",
+   "y": 1986,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bon Jovi Livin' on a Prayer"
+  },
+  {
+   "id": "1p1i9",
+   "ar": "Alaska y Dinarama",
+   "ti": "A Quién Le Importa",
+   "y": 1986,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Alaska y Dinarama A Quién Le Importa"
+  },
+  {
+   "id": "7zyto",
+   "ar": "U2",
+   "ti": "With or Without You",
+   "y": 1987,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "U2 With or Without You"
+  },
+  {
+   "id": "b7ckr",
+   "ar": "Sumo",
+   "ti": "Divididos por la Felicidad",
+   "y": 1987,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sumo Divididos por la Felicidad"
+  },
+  {
+   "id": "ms4ml",
+   "ar": "Ana Gabriel",
+   "ti": "Ay Amor",
+   "y": 1987,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ana Gabriel Ay Amor"
+  },
+  {
+   "id": "mor4f",
+   "ar": "Bobby McFerrin",
+   "ti": "Don't Worry, Be Happy",
+   "y": 1988,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Bobby McFerrin Don't Worry, Be Happy"
+  },
+  {
+   "id": "1sxdw",
+   "ar": "Poison",
+   "ti": "Every Rose Has Its Thorn",
+   "y": 1988,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Poison Every Rose Has Its Thorn"
+  },
+  {
+   "id": "1hide",
+   "ar": "Ricardo Montaner",
+   "ti": "Tan Enamorados",
+   "y": 1988,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Ricardo Montaner Tan Enamorados"
+  },
+  {
+   "id": "173ga",
+   "ar": "Madonna",
+   "ti": "Like a Prayer",
+   "y": 1989,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Madonna Like a Prayer"
+  },
+  {
+   "id": "jhbjb",
+   "ar": "Richard Marx",
+   "ti": "Right Here Waiting",
+   "y": 1989,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Richard Marx Right Here Waiting"
+  },
+  {
+   "id": "ick3e",
+   "ar": "The B-52's",
+   "ti": "Love Shack",
+   "y": 1989,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "The B-52's Love Shack"
+  },
+  {
+   "id": "1116j",
+   "ar": "Hombres G",
+   "ti": "Voy a Pasármelo Bien",
+   "y": 1989,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Hombres G Voy a Pasármelo Bien"
+  },
+  {
+   "id": "1qd8v",
+   "ar": "Sinéad O'Connor",
+   "ti": "Nothing Compares 2 U",
+   "y": 1990,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Sinéad O'Connor Nothing Compares 2 U"
+  },
+  {
+   "id": "tnmjq",
+   "ar": "Metallica",
+   "ti": "Enter Sandman",
+   "y": 1991,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Metallica Enter Sandman"
+  },
+  {
+   "id": "1tiln",
+   "ar": "R.E.M.",
+   "ti": "Losing My Religion",
+   "y": 1991,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "R.E.M. Losing My Religion"
+  },
+  {
+   "id": "14sni",
+   "ar": "Los Rodríguez",
+   "ti": "Mi Enfermedad",
+   "y": 1991,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Rodríguez Mi Enfermedad"
+  },
+  {
+   "id": "9jx8o",
+   "ar": "Fito Páez",
+   "ti": "El Amor Después del Amor",
+   "y": 1992,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Fito Páez El Amor Después del Amor"
+  },
+  {
+   "id": "70cf3",
+   "ar": "Green Day",
+   "ti": "Basket Case",
+   "y": 1994,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Green Day Basket Case"
+  },
+  {
+   "id": "1bqgt",
+   "ar": "Los Enanitos Verdes",
+   "ti": "Lamento Boliviano",
+   "y": 1994,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Los Enanitos Verdes Lamento Boliviano"
+  },
+  {
+   "id": "1y3pe",
+   "ar": "Alanis Morissette",
+   "ti": "You Oughta Know",
+   "y": 1995,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Alanis Morissette You Oughta Know"
+  },
+  {
+   "id": "1x6fo",
+   "ar": "Maná",
+   "ti": "Oye Mi Amor",
+   "y": 1995,
+   "sp": null,
+   "it": null,
+   "du": null,
+   "q": "Maná Oye Mi Amor"
   }
  ]
 }
